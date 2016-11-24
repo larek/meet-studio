@@ -1,0 +1,37 @@
+.imageblock {
+    width: 280px;
+    margin-right: 33px;
+    float: left;
+    text-align: center;
+    margin-bottom: 25px;
+    height: 300px;
+    border: 1px solid silver;
+    border-radius: 4px;
+    box-shadow: 0px 0px 7px silver;
+    cursor: pointer;
+    background: white;
+}
+
+.imageblock:hover{
+	box-shadow: 0px 0px 7px #928f8f;
+}
+
+.imageblock img{
+width:100%;
+}
+
+.imageblock.lastworks {
+	margin-bottom:0;
+}
+
+.nav a{
+	text-transform: uppercase;
+}
+
+.afterpicture {
+    padding: 10px 20px;
+}
+
+#singlepost img{
+	max-width:100%;
+}

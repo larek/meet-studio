@@ -1,0 +1,151 @@
+input.parsley-success,
+select.parsley-success,
+textarea.parsley-success {
+	color: #448745;
+	background-color: #DFF0D8;
+	border: 1px solid #D6E9C6;
+}
+
+input.parsley-error,
+select.parsley-error,
+textarea.parsley-error {
+	/* color: #B94A48; */
+	background-color: rgba(193, 77, 77, 0.5)!important;
+	border: 1px solid #EED3D7!important;
+}
+
+.parsley-errors-list {
+	margin: 0px 0 5px;
+	padding: 0;
+	list-style-type: none;
+	font-size: 0.9em;
+	line-height: 0.9em;
+	opacity: 0;
+	
+	transition: all .3s ease-in;
+	-o-transition: all .3s ease-in;
+	-moz-transition: all .3s ease-in;
+	-webkit-transition: all .3s ease-in;
+}
+
+.parsley-errors-list.filled {
+  opacity: 1;
+}
+
+/********** Product Page **********/
+#tabs_buy .parsley-errors-list {
+	margin: 3px 0px 0px 0px;
+	font-size: 11px;
+}
+
+/********** Campaign On tour **********/
+#ontour-form .parsley-errors-list {
+	margin: 3px 0px 0px 0px;
+	font-size: 11px;
+	color: #ACACAC;
+	float: left;
+}
+
+/********** Catalogue **********/
+#catalogue-form .parsley-errors-list {
+	margin: 3px 0px 0px 0px;
+	font-size: 11px;
+	color: #ACACAC;
+	float: left;
+}
+
+/********** City Guide **********/
+#cityguide-form .parsley-errors-list {
+	margin: 3px 0px 0px 0px;
+	font-size: 11px;
+	color: #ACACAC;
+	float: left;
+}
+
+/********** Contact Us **********/
+#contact-form .parsley-errors-list {
+	margin: 3px 0px 0px 0px;
+	font-size: 11px;
+	color: #ACACAC;
+	float: left;
+}
+
+
+/********** Newsletter **********/
+#newsletter-form .parsley-errors-list {
+	margin: 0px 0px 10px 52px;
+	font-size: 11px;
+	color: #ACACAC;
+	float: left;
+}
+
+/********** Pag Press **********/
+#access_press-form .parsley-errors-list {
+	margin: 3px 0px 0px 0px;
+	font-size: 11px;
+	color: #ACACAC;
+	float: left;
+}
+
+#signup_press-form .parsley-errors-list {
+	margin: 3px 0px 0px 0px;
+	font-size: 11px;
+	color: #ACACAC;
+	float: left;
+}
+
+/********** Price List **********/
+#pricelist-form .parsley-errors-list {
+	margin: 3px 0px 0px 0px;
+	font-size: 11px;
+	color: #ACACAC;
+	float: left;
+}
+
+/********** Fifty Shades of Grey **********/
+#fifty_shades-form .parsley-errors-list {
+	margin: 3px 0px 0px 0px;
+	font-size: 11px;
+	color: #ACACAC;
+	float: left;
+}
+
+#fifty_shades-form input.parsley-error,
+#fifty_shades-form select.parsley-error,
+#fifty_shades-form textarea.parsley-error {
+	color: #d8d8d8;
+}
+
+/********** Stock Content **********/
+#stock_content-form .parsley-errors-list {
+	margin: 3px 0px 0px 0px;
+	font-size: 11px;
+	color: #ACACAC;
+	float: left;
+}
+
+/**** Ready to Ship / Ready to Publish ****/
+#ready_to_publish-form .parsley-errors-list,
+#ready_to_ship-form .parsley-errors-list {
+	margin: 3px 0px 0px 0px;
+	font-size: 11px;
+	color: #ACACAC;
+	float: left;
+}
+
+/********** Rare Edition **********/
+#rare_edition-form .parsley-errors-list,
+#rare_edition-form .parsley-errors-list {
+	margin: 3px 0px 0px 0px;
+	font-size: 11px;
+	color: #272727;
+	float: left;
+}
+
+/********** Landing Tradeshow **********/
+#tradeshow_landing-form .parsley-errors-list {
+	margin: 3px 0px 0px 0px;
+	font-size: 11px;
+	color: #ACACAC;
+	float: left;
+}
