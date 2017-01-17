@@ -55,8 +55,11 @@ img.emoji {
     <div class="nav">
     	<ul>
            <li><a href="/" style="color:#DD9B28;">Главная</a></li>
-           <li><a href="/projects">Интерьеры</a></li>
-           <li><a href="#">О нас</a></li>
+           <li><a href="#">Мебель</a></li>
+           <li><a href="#">Декор</a></li>
+           <li><a href="projects">Интерьер</a></li>
+           <li><a href="#">Услуги</a></li>
+           <li><a href="#">Наша философия</a></li>
            <li><a href="#">Новости</a></li>
            <li><a href="#">Контакты</a></li>
            
