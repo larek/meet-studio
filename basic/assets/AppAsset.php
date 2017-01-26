@@ -26,7 +26,7 @@ class AppAsset extends AssetBundle
         'css/scrollToTop.css',
         'css/flexslider.css',
         'css/style-ready-to-ship.css',
-        'css/site.css'
+        'css/site.css?v=1.0.2'
     ];
     public $js = [
         'js/affix.js',
