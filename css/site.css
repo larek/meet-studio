@@ -35,3 +35,31 @@ width:100%;
 #singlepost img{
 	max-width:100%;
 }
+
+.circle1 {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background: black;
+    position: absolute;
+    margin: 10px 860px;
+}
+
+.circle2 {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background: black;
+    position: absolute;
+    margin: 270px -125px;
+}
+
+.circle3 {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: black;
+    position: fixed;
+    bottom: -100px;
+    right: -100px;
+}
