@@ -1,0 +1,20 @@
+{
+  "name": "meet-studio",
+  "homepage": "https://github.com/larek/meet-studio",
+  "authors": [
+    "Alexandr Tikhonov <t9101029991@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "fotorama": "^4.6.4"
+  }
+}
