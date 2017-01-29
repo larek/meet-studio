@@ -2,6 +2,18 @@
 use yii\helpers\Html;
 /* @var $this yii\web\View */
 $this->title = 'Студия дизайна интерьера и мебели Юлии Сазоновой';
+$this->registerJsFile('/bower_components/fotorama/fotorama.js',['depends' => [\yii\web\JqueryAsset::className()]]);
+$this->registerCssFile('/bower_components/fotorama/fotorama.css');
+$this->registerJs('
+		$(".fotorama").fotorama({
+			width: "100%",
+			ratio: 2/1,
+			data:[
+				{img: "/images/meet-slider1-background.png", fit: "cover",html: "<img src=\"/images/meet-slider1-image1-reverse.png\" style=\"height:100%\"><img src=\"/images/meet-slider1-image2.png\" style=\"position: absolute;top: -40%;height: 140%;right: 0;\"><div class=\"\" style=\"position: absolute;top: 100px;width: 88%;text-align: center;font-size: 30px;\">ALABAMA / Стол</div>"},
+			],
+		});
+	');
+
 ?>
 	
 	<div id="row" class="first-slide home_mr-top">
@@ -10,30 +22,8 @@ $this->title = 'Студия дизайна интерьера и мебели �
 <link rel="stylesheet" href="https://www.brabbu.com/en/js/FlexSlider/flexslider.css" type="text/css" media="screen" /> 
 
 
-<div class="flexslider flexslider_refresh" >
-	<ul class="slides">
-		
-	    <li class="box-hover">
-			<a href="" target="_blank">
-				<img src="/images/slide1.png" />
-			</a>
-			
-	    </li>
-	    <!-- <li class="box-hover">
-			<a href="http://brabbucontract.com/" target="_blank">
-				<img src="https://www.brabbu.com/img/homepage/first-slide/bb-contract.jpg" />
-			</a>
-			<div class="hover-homepage background-color-hover invisible">
-				<span class="name">
-					<a href="http://brabbucontract.com/" target="_blank">
-						SEE MORE > 
-					</a>
-				</span>
-			</div>
-	    </li>  -->
-		
+<div class="fotorama">
 
-	</ul>
 </div>
 
 	</div>
