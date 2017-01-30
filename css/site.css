@@ -63,3 +63,10 @@ width:100%;
     bottom: -100px;
     right: -100px;
 }
+
+article#special-page {
+    background: white;
+    padding: 3px 20px;
+    margin: 10px 0px;
+    min-height: 500px;
+}
