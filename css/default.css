@@ -5374,3 +5374,13 @@ opacity: 0;
     width: 70%;
     float: right;
 }
+
+.nav-dropdown{
+	display:none;
+	    position: absolute;
+    width: 950px;
+    padding: 20px 0px;
+    background: rgba(39, 38, 38, 0.9);
+    margin-top: 35px;
+    z-index: 10;
+}

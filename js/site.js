@@ -36,4 +36,13 @@
         startAt: index, 
         
     })
+
+    // $(".nav > ul > li > a").mouseenter(function(){
+    //     $(this).attr('class') == 'dropdown' ? $(".nav-dropdown").show() : $(".nav-dropdown").hide();
+    // });
+
+    // $(".nav").mouseleave(function(){
+    //     $(".nav-dropdown").hide();
+    // });
+
 })

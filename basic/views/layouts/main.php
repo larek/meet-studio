@@ -42,13 +42,16 @@ AppAsset::register($this);
            <li><a href="/" style="color:#DD9B28;">Главная</a></li>
            <li><a href="#">Мебель</a></li>
            <li><a href="#">Декор</a></li>
-           <li><?= Html::a('Интерьер',['projects/index']);?></li>
+           <li><?= Html::a('Интерьер',['projects/index'],['class' => 'dropdown','id'=>'1']);?></li>
            <li><a href="#">Услуги</a></li>
            <li><a href="#">Наша философия</a></li>
            <li><a href="#">Новости</a></li>
            <li><?= Html::a('Контакты',['site/contact'])?></li>
            
 		</ul>
+
+		<div class="nav-dropdown">
+		</div>
     </div>
 
 	<div class="clear"></div>
