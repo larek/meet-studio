@@ -32,48 +32,16 @@ $this->registerJs('
 			<div class="flexslider">
 				<ul class="slides">
 					<li class="box-hover">
-				    	<img src="https://www.brabbu.com/img/homepage/second-slide/wales-sofa-manuka-center-table-aurum-suspension-light-brabbu.jpg" />
-						<div class="hover-homepage hm-extra background-color-hover invisible">
-							<span class="name">
-								<a href="/en/upholstery/naj-armchair/">
-									naj | armchair
-								</a>
-							</span>
-							<span class="name">
-								<a href="/en/lighting/aurum-suspension-light-2/">
-									aurum | suspension light ii
-								</a>
-							</span>
-						</div>
+				    	<img src="/images/meet-finish.png" />
 						<div class="hover-homepage background-color-hover invisible">
 							<span class="name">
-								<a href="/en/upholstery/wales-sofa/">
-									wales | sofa
+								<a >
+									НАШИ ФИНИШИ
 								</a>
 							</span>
-							<span class="name">
-								<a href="/en/casegoods/manuka-center-table/">
-									manuka | center table
-								</a>
-							</span>
-<div class="share">
-								<div class="share-facebook">
-									<a href="http://www.facebook.com/share.php?u=http://brabbu.com/en/casegoods/manuka-center-table/" title="BRABBU" target="_blank" rel="nofollow" style="float:left;">
-										<img alt="Facebook" title="Facebook" src="https://www.brabbu.com/img/homepage/product-social/facebook-homepage.png" onmouseover="this.src='/img/homepage/product-social/facebook-homepage-hover.png'" onmouseout="this.src='/img/homepage/product-social/facebook-homepage.png'">
-									</a>
-								</div>
-								<div class="share-twitter">
-									<a href="http://twitter.com/home?status=MANUKA Center Table by @BRABBU http://goo.gl/F7Q0hN" title="BRABBU" target="_blank" rel="nofollow" style="float:left;">
-										<img alt="TwitThis" src="https://www.brabbu.com/img/homepage/product-social/twitter-homepage.png" onmouseover="this.src='/img/homepage/product-social/twitter-homepage-hover.png'" onmouseout="this.src='/img/homepage/product-social/twitter-homepage.png'">
-									</a>
-								</div>
-								<div id="pinterest-btn" class="share-pinterest">
-									<a href="http://pinterest.com/pin/create/button/?url=http://brabbu.com/en/casegoods/manuka-center-table/&media=http://brabbu.com/img/homepage/second-slide/wales-sofa-manuka-center-table-aurum-suspension-light-brabbu.jpg&description=IBIS Armchair by @BRABBU http://goo.gl/F7Q0hN" class="pin-it-button" target="_blank" count-layout="horizontal">
-									    <img border="0" src="https://www.brabbu.com/img/homepage/product-social/pinterest-homepage.png"  title="Pin It" />
-									</a>
-								</div>
-							</div>
+							
 						</div>
+					
 				    </li>
 					<li class="box-hover">
 				    	<img src="https://www.brabbu.com/img/homepage/second-slide/ibis-armchair-aruna-wall-light-brabbu.jpg" />
@@ -241,11 +209,11 @@ $this->registerJs('
 				<ul class="slides">
 					<li class="box-hover">
 						<a href="/en/lighting/horus-suspension-light-2/">
-							<img src="https://www.brabbu.com/img/homepage/new-pieces/horus-suspension-light-2.jpg" class="zindex_bottom"/>
+							<img src="https://placeholdit.imgix.net/~text?txtsize=23&bg=f0ede8&txtclr=000000&txt=%D0%91%D0%B0%D0%BD%D0%BD%D0%B5%D1%80&w=500&h=500" class="zindex_bottom"/>
 						</a>
-						<div class="hover-homepage background-color-hover invisible">
+						<div class="hover-homepage background-color-hover invisible" style='display:none'>
 							<span class="name">
-								<a href="/en/lighting/horus-suspension-light-2/">
+								<a>
 									HORUS | SUSPENSION LIGHT II
 								</a>
 							</span>
@@ -774,23 +742,23 @@ $this->registerJs('
 	</div>
 	<div id="middle-info">
 		<div class="middle-info-box">
-			<a href="/en/info.php">CONTACT US</a>
+			<a href="">КОНТАКТЫ</a>
 		</div>
 		<div class="verticalLine"></div>
 		<div class="middle-info-box">
-			<a href="/en/all-products.php">ALL PRODUCTS</a>
+			<a href="">ИНТЕРЬЕР</a>
 		</div>
 		<div class="verticalLine"></div>
 		<div class="middle-info-box">
-			<a href="/en/info.php">REQUEST INFO</a>
+			<a href="">МЕБЕЛЬ</a>
 		</div>
 		<div class="verticalLine"></div>
 		<div class="middle-info-box">
-			<a href="/blog/" target="_blank">SEE OUR BLOG</a>
+			<a href="" target="_blank">ДЕКОР</a>
 		</div>
 		<div class="clear"></div>
 	</div>
-	<div id="row" class="home_mr-top">
+	<div id="row" class="home_mr-top" style='display:none'>
 		<div class="block align-left box-hover mr-right-2">
 			<a href="/en/campaigns/rare-edition/">
 		    	<img src="https://www.brabbu.com/img/homepage/category-area/large/rare-edition-unveil-more-by-brabbu1.jpg" />
@@ -925,7 +893,7 @@ $this->registerJs('
 		</div>
 		<div class="clear"></div>
 	</div>
-	<div id="row" class="home_mr-top">
+	<div id="row" class="home_mr-top" style='display:none'>
 		<div class="block align-left mr-right-2">
 			<div class="block-top">
 				<div class="align-left image-category">
@@ -1027,11 +995,11 @@ $this->registerJs('
 		</div>
 		<div class="clear"></div>
 	</div>
-	<div id="row" class="home_mr-top">
+	<div id="row" class="home_mr-top" style='display:none'>
 		<div class="general-partners b-catalogue "><a href="http://www.brabbu.com/en/catalogue.php"><img src="https://www.brabbu.com/img/general/more/download-catalogue-1_.jpg" onmouseover="this.src='/img/general/more/download-catalogue-2_.jpg'" onmouseout="this.src='/img/general/more/download-catalogue-1_.jpg'"></a></div>
 	</div>
 
-	<div id="middle-info">
+	<div id="middle-info" style='display:none'>
 		<div class="middle-info-box">
 			<a href="/en/news-events">NEWS AND EVENTS</a>
 		</div>
@@ -1049,7 +1017,7 @@ $this->registerJs('
 		</div>
 		<div class="clear"></div>
 	</div>
-	<div id="row" class="home_mr-top">
+	<div id="row" class="home_mr-top" style='display:none'>
 		<div class="align-left handmade-video">
 			<iframe width="667" height="375" src="https://www.youtube.com/embed/videoseries?list=PL5oj4yERzQErZNyfjZGOUl3zKIQ4gYZOn&amp;hl=en_US&amp;autoplay=0" frameborder="0" allowfullscreen></iframe>
 		</div>
@@ -1059,7 +1027,7 @@ $this->registerJs('
 			</a>
 		</div>
 	</div>
-	<div id="row" class="home_mr-top">
+	<div id="row" class="home_mr-top" style='display:none'>
 		<div class="art-area">
 			<form id="newsletter-form" class="form-newsletter" action="/actions/brabbu_newsletter_subscribe.php" method="post" data-parsley-validate>
 				<p><b>subscribe</b></p>
@@ -1068,7 +1036,7 @@ $this->registerJs('
             </form>             
 		</div>
 	</div>
-	<div id="row" class="home_mr-top">
+	<div id="row" class="home_mr-top" style='display:none'>
 		<!-- Project -->
 		<div class="portrait-wallpaper box-hover">
 			<a href="/en/projects/">
@@ -1340,7 +1308,7 @@ $this->registerJs('
 			</div>
 		</div>
 	</div>
-	<div id="row" class="home_mr-top">
+	<div id="row" class="home_mr-top" style='display:none'>
 		<div class="box-hover" style="margin-bottom: 20px;">
 			<div class="flexslider">
 				<ul class="slides">
