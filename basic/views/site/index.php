@@ -208,32 +208,15 @@ $this->registerJs('
 			<div class="flexslider">
 				<ul class="slides">
 					<li class="box-hover">
-						<a href="/en/lighting/horus-suspension-light-2/">
-							<img src="https://placeholdit.imgix.net/~text?txtsize=23&bg=f0ede8&txtclr=000000&txt=%D0%91%D0%B0%D0%BD%D0%BD%D0%B5%D1%80&w=500&h=500" class="zindex_bottom"/>
+						<a href="#">
+							<img src="/images/meet-stone.jpg" class="zindex_bottom"/>
 						</a>
-						<div class="hover-homepage background-color-hover invisible" style='display:none'>
+						<div class="hover-homepage background-color-hover invisible" >
 							<span class="name">
 								<a>
-									HORUS | SUSPENSION LIGHT II
+									Каменный шпон
 								</a>
 							</span>
-							<div class="share">
-								<div class="share-facebook">
-									<a href="http://www.facebook.com/share.php?u=http://brabbu.com/en/lighting/horus-suspension-light-2/" title="BRABBU" target="_blank" rel="nofollow" style="float:left;">
-										<img alt="Facebook" title="Facebook" src="https://www.brabbu.com/img/homepage/product-social/facebook-homepage.png" onmouseover="this.src='/img/homepage/product-social/facebook-homepage-hover.png'" onmouseout="this.src='/img/homepage/product-social/facebook-homepage.png'">
-									</a>
-								</div>
-								<div class="share-twitter">
-									<a href="http://twitter.com/home?status=NEW HORUS SUSPENSION LIGHT II by @BRABBU " title="BRABBU" target="_blank" rel="nofollow" style="float:left;">
-										<img alt="TwitThis" src="https://www.brabbu.com/img/homepage/product-social/twitter-homepage.png" onmouseover="this.src='/img/homepage/product-social/twitter-homepage-hover.png'" onmouseout="this.src='/img/homepage/product-social/twitter-homepage.png'">
-									</a>
-								</div>
-								<div id="pinterest-btn" class="share-pinterest">
-									<a href="http://pinterest.com/pin/create/button/?url=http://www.brabbu.com/en/lighting/horus-suspension-light-2/&media=http://www.brabbu.com/img/homepage/new-pieces/calla-table-light.jpg&description=NEW HORUS SUSPENSION LIGHT II by @BRABBU " class="pin-it-button" target="_blank" count-layout="horizontal">
-									    <img border="0" src="https://www.brabbu.com/img/homepage/product-social/pinterest-homepage.png" title="Pin It" />
-									</a>
-								</div>
-							</div>
 						</div>
 				    </li>
 
