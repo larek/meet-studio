@@ -29,14 +29,14 @@ class AppAsset extends AssetBundle
         'css/site.css?v=1.0.4'
     ];
     public $js = [
-        'js/affix.js',
-        'js/jquery.flexslider.js',
-        'js/demo.js',
-        'js/jquery.mousewheel.js',
-        'js/jquery-scrollToTop.js',
-        'js/modernizr.js',
-        'js/jquery.easing.js',
-        'js/parsley.js',
+        // 'js/affix.js',
+        // 'js/jquery.flexslider.js',
+        // 'js/demo.js',
+        // 'js/jquery.mousewheel.js',
+        // 'js/jquery-scrollToTop.js',
+        // 'js/modernizr.js',
+        // 'js/jquery.easing.js',
+        // 'js/parsley.js',
         'js/site.js'
     ];
     public $depends = [

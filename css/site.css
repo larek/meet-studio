@@ -81,3 +81,8 @@ article#special-page {
 .project-list ul li {
     list-style-type: decimal;
 }
+
+.afterpicture.sale.lebel {
+    background: #b31717;
+    color: white;
+}

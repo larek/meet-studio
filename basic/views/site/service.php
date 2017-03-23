@@ -25,6 +25,7 @@ $this->title = 'Услуги';
 		<img width="300" height="200" oncontextmenu="return false;" src="/images/meet-stars-4.jpg" class="attachment-gallery wp-post-image">
 	</div>
 	<div class="afterpicture">Дизайн проект 4 звезды</div>
+	<div class="afterpicture sale lebel">ВСЕГО ЗА 650 руб/м2</div>
 </div>
 	
 
