@@ -37,7 +37,7 @@ class AppAsset extends AssetBundle
         // 'js/modernizr.js',
         // 'js/jquery.easing.js',
         // 'js/parsley.js',
-        'js/site.js'
+        'js/site.js?v=1.0.2'
     ];
     public $depends = [
         'yii\web\YiiAsset',

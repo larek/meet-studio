@@ -57,20 +57,6 @@ AppAsset::register($this);
 	<div class="clear"></div>
 </div>
 
-<style type="text/css">
-	.art-area {
-		margin: 20px 0;
-	}
-	.vertical-slide_stamp {
-		-webkit-filter: invert(100%); 
-		filter: invert(100%);
-
-	}
-	.flexslider{
-margin: 0 !important;
-padding: 0 !important;
-}
-</style>
 <div class="container">
 <?= $content?>
 </div>

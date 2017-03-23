@@ -16,17 +16,13 @@ $this->registerJs('
 
 ?>
 	
-	<div id="row" class="first-slide home_mr-top">
-		<!-- Flex Slide-->
 
-<link rel="stylesheet" href="https://www.brabbu.com/en/js/FlexSlider/flexslider.css" type="text/css" media="screen" /> 
 
 
 <div class="fotorama">
 
 </div>
 
-	</div>
 	<div id="row" class="home_mr-top">
 		<div class="second-slide align-left mr-right-2">
 			<div class="flexslider">
