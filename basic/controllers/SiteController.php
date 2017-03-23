@@ -78,6 +78,10 @@ class SiteController extends Controller
         return $this->render('service');
     }
 
+    public function actionServiceSingle($id){
+        return $this->render('service-single-'.$id);
+    }
+
     public function actionLogout()
     {
         Yii::$app->user->logout();

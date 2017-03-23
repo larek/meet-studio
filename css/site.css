@@ -70,3 +70,14 @@ article#special-page {
     margin: 10px 0px;
     min-height: 500px;
 }
+
+.project-list{
+    padding: 20px 0px;
+}
+
+.project-list ul {
+    padding: 10px 30px;
+}
+.project-list ul li {
+    list-style-type: decimal;
+}

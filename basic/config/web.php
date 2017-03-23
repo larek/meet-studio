@@ -84,6 +84,7 @@ $config = [
                 'catalog' => 'site/catalog',
                 'callback' => 'site/callback',
                 'service' => 'site/service',
+                'service/<id>' => 'site/service-single',
                 'product/<id>' => 'site/product',
                 'pages/<id>' => 'site/pages',
                 'admin/product/search/<id>' => 'admin/product/index',

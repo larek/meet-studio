@@ -18,7 +18,7 @@ class AppAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        'css/default.css?v=1.0.1',
+        'css/default.css?v=1.0.2',
         'css/normalize.css',
         'css/docs.css ',
         'css/parsley.css',
@@ -26,7 +26,7 @@ class AppAsset extends AssetBundle
         'css/scrollToTop.css',
         'css/flexslider.css',
         'css/style-ready-to-ship.css',
-        'css/site.css?v=1.0.3'
+        'css/site.css?v=1.0.4'
     ];
     public $js = [
         'js/affix.js',
