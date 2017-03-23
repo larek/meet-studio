@@ -74,6 +74,14 @@ class SiteController extends Controller
         }
     }
 
+    public function actionDecor(){
+        return $this->render('decor');
+    }
+
+    public function actionDecorSingle($id){
+        return $this->render('decor-single-'.$id);
+    }
+
     public function actionService(){
         return $this->render('service');
     }

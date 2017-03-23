@@ -41,7 +41,7 @@ AppAsset::register($this);
     	<ul>
            <li><a href="/" style="color:#DD9B28;">Главная</a></li>
            <li><a href="#">Мебель</a></li>
-           <li><a href="#">Декор</a></li>
+           <li><a href="/decor">Декор</a></li>
            <li><?= Html::a('Интерьер',['projects/index'],['class' => 'dropdown','id'=>'1']);?></li>
            <li><a href="/service">Услуги</a></li>
            <li><a href="#">Наша философия</a></li>

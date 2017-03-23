@@ -53,12 +53,12 @@ $this->registerJs('
 			<div class="flexslider">
 				<ul class="slides">
 					<li class="box-hover">
-						<a href="#">
+						<a href="/decor/1">
 							<img src="/images/meet-stone.jpg" class="zindex_bottom"/>
 						</a>
 						<div class="hover-homepage background-color-hover" style='margin-bottom:20px'>
 							<span class="name">
-								<a href=''>
+								<a href='/decor/1'>
 									Каменный шпон
 								</a>
 							</span>
