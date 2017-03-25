@@ -33,7 +33,7 @@ body {
 	height:auto;
 	font-family: 'PT Sans', sans-serif;
 	letter-spacing: 0.8pt;
-	color:#777;
+	color:#000;
 	line-height:20px;
 	margin: 0;
 }
@@ -105,7 +105,7 @@ p {
 	-webkit-margin-end:0;
 }
 
-h2 {
+/*h2 {
 	display:block;
 	font-size:1.5em;
 	-webkit-margin-before:0;
@@ -123,7 +123,7 @@ h3 {
 	-webkit-margin-start:0;
 	-webkit-margin-end:0;
 	font-weight:400;
-}
+}*/
 
 .interested {
 	display:none!important;

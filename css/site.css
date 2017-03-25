@@ -86,3 +86,18 @@ article#special-page {
     background: #b31717;
     color: white;
 }
+
+.baner {
+    padding: 20px;
+    background: #e8e5d6;
+    margin-bottom: 21px;
+    text-align: center;
+}
+
+a.btn-black {
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 27px;
+    text-transform: uppercase;
+}

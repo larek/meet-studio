@@ -18,15 +18,15 @@ class AppAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        'css/default.css?v=1.0.2',
+        'css/default.css?v=1.0.3',
         'css/normalize.css',
-        'css/docs.css ',
+        // 'css/docs.css ',
         'css/parsley.css',
         'css/easing.css',
         'css/scrollToTop.css',
         'css/flexslider.css',
         'css/style-ready-to-ship.css',
-        'css/site.css?v=1.0.4'
+        'css/site.css?v=1.0.5'
     ];
     public $js = [
         // 'js/affix.js',

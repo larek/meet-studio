@@ -25,6 +25,12 @@ $this->registerJs('
 
 </div>
 
+<div class="baner">
+	<h2>Беспрецедентная акция!</h2> 
+	<h3>Дизайн проект "4 звезды" за 650 руб</h3>
+	<a href='/service/4' class="btn-black">Подробнее</a>
+</div>
+
 	<div id="row" class="home_mr-top">
 		<div class="second-slide align-left mr-right-2">
 			<div class="flexslider">
