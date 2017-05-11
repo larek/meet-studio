@@ -90,6 +90,10 @@ class SiteController extends Controller
         return $this->render('service-single-'.$id);
     }
 
+    public function actionRealProject(){
+        return $this->render('real-project');
+    }
+
     public function actionLogout()
     {
         Yii::$app->user->logout();

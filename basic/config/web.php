@@ -83,6 +83,7 @@ $config = [
                 'category/<id>' => 'site/category',
                 'catalog' => 'site/catalog',
                 'callback' => 'site/callback',
+                'real-project' => 'site/real-project',
                 'decor' => 'site/decor',
                 'decor/<id>' => 'site/decor-single',
                 'service' => 'site/service',

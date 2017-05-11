@@ -44,7 +44,7 @@ AppAsset::register($this);
            <li><a href="/decor">Декор</a></li>
            <li><?= Html::a('Интерьер',['projects/index'],['class' => 'dropdown','id'=>'1']);?></li>
            <li><a href="/service">Услуги</a></li>
-           <li><a href="#">Наша философия</a></li>
+           <li><a href="/real-project">Реализованные проекты</a></li>
            <li><a href="#">Новости</a></li>
            <li><?= Html::a('Контакты',['site/contact'])?></li>
            
