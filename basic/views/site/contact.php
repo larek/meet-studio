@@ -18,7 +18,7 @@ $this->title = "Контакты";
                 салон Vendixs <br>
                 <!-- Email: <a href="mailto:ppinho@brabbu.com">ppinho@brabbu.com</a><br> -->
                 <!-- Skype:  patriciapinhocunha<br> -->
-                Телефон: <span class="phone">8 (3842) 58-22-57</span></p>
+                Телефон: <span class="phone">+7 (3842) 58-22-57</span></p>
             </div>
             <div class="info-contacts2 ">
                 <p><b>г. НИЖНИЙ НОВГОРОД</b> <br>
@@ -26,7 +26,8 @@ $this->title = "Контакты";
                 <!-- оф. 104<br> -->
                 салон Vendixs<br>
                 <!-- Skype:  patriciapinhocunha<br> -->
-                Телефон: <span class="phone">8 (831) 284-40-24</span></p>
+                Офис: <span class="phone">+7 (831) 284-40-24</span><br>
+                Cотовый: <span class="phone">+7 (905) 192-12-34</span></p>
             </div>
         
             <div class="clear"></div>
