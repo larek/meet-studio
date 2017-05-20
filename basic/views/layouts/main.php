@@ -40,7 +40,7 @@ AppAsset::register($this);
     <div class="nav">
     	<ul>
            <li><a href="/" style="color:#DD9B28;">Главная</a></li>
-           <li><a href="#">Мебель</a></li>
+           <li><a href="/furniture">Мебель</a></li>
            <li><a href="/decor">Декор</a></li>
            <li><?= Html::a('Интерьер',['projects/index'],['class' => 'dropdown','id'=>'1']);?></li>
            <li><a href="/service">Услуги</a></li>

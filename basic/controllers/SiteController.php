@@ -82,6 +82,14 @@ class SiteController extends Controller
         return $this->render('decor-single-'.$id);
     }
 
+    public function actionFurniture(){
+        return $this->render('furniture');
+    }
+
+    public function actionFurnitureSingle($id){
+        return $this->render('furniture-single-'.$id);
+    }
+
     public function actionService(){
         return $this->render('service');
     }
