@@ -1,5 +1,5 @@
 <?
-$this->title = 'Каменный шпон';
+$this->title = 'Прикроватная тумба';
 $this->registerJsFile('/bower_components/fotorama/fotorama.js',['depends' => [\yii\web\JqueryAsset::className()]]);
 $this->registerCssFile('/bower_components/fotorama/fotorama.css');
 $this->registerCssFile("https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css");
