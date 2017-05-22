@@ -5,11 +5,8 @@
     text-align: center;
     margin-bottom: 25px;
     height: 300px;
-    border: 1px solid silver;
     border-radius: 4px;
-    box-shadow: 0px 0px 7px silver;
     cursor: pointer;
-    background: white;
 }
 
 .imageblock:hover{

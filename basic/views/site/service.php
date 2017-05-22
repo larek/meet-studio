@@ -16,13 +16,13 @@ $this->title = 'Услуги';
 
 <div class="imageblock" onclick="window.location = '/service/5'">
 	<div class="singleimage">
-		<img width="300" height="200" oncontextmenu="return false;" src="/images/meet-stars-5.jpg" class="attachment-gallery wp-post-image">
+		<img width="300" height="200" oncontextmenu="return false;" src="/images/meet-studio-stars-5.png" class="attachment-gallery wp-post-image">
 	</div>
 	<div class="afterpicture">Дизайн проект 5 звезд</div>
 </div>
 <div class="imageblock" onclick="window.location = '/service/4'">
 	<div class="singleimage">
-		<img width="300" height="200" oncontextmenu="return false;" src="/images/meet-stars-4.jpg" class="attachment-gallery wp-post-image">
+		<img width="300" height="200" oncontextmenu="return false;" src="/images/meet-studio-stars-4.png" class="attachment-gallery wp-post-image">
 	</div>
 	<div class="afterpicture">Дизайн проект 4 звезды</div>
 	<div class="afterpicture sale lebel">ВСЕГО ЗА 650 руб/м2</div>
