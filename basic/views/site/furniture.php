@@ -35,6 +35,13 @@ $this->title = 'Мебель';
 	<div class="afterpicture">Банкетка</div>
 </div>
 
+<div class="imageblock" onclick="window.location = '/furniture/4'">
+	<div class="singleimage">
+		<img width="300" height="200" oncontextmenu="return false;" src="/images/furniture/4/1.jpg" class="attachment-gallery wp-post-image">
+	</div>
+	<div class="afterpicture">Вешалка для одежды</div>
+</div>
+
 			<div class="clear"></div>
 		</section>
 </section>
