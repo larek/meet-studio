@@ -37,12 +37,12 @@ $this->registerJs('
 			<div class="flexslider">
 				<ul class="slides">
 					<li class="box-hover">
-						<a href="">
+						<a href="/decor/2">
 				    		<img src="/images/meet-finish.png" />
 				    	</a>
 						<div class="hover-homepage background-color-hover" style='margin-bottom:20px'>
 							<span class="name">
-								<a href=''>
+								<a href='/decor/2'>
 									НАШИ ФИНИШИ
 								</a>
 							</span>
