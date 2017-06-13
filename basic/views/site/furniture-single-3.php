@@ -1,8 +1,9 @@
 <?
 $this->title = 'Банкетка';
 $this->registerJsFile('/bower_components/fotorama/fotorama.js',['depends' => [\yii\web\JqueryAsset::className()]]);
+$this->registerJsFile('/js/ban-download-img.js',['depends' => [\yii\web\JqueryAsset::className()]]);
 $this->registerCssFile('/bower_components/fotorama/fotorama.css');
-$this->registerCssFile("https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css");
+$this->registerCssFile("https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css");
 ?>
 <div class="row">
 	<div class="col-md-12">
@@ -10,15 +11,35 @@ $this->registerCssFile("https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap
 	</div>
 </div>
 <div class="row">
-	<div class="col-md-12">
-		<div class="fotorama" data-width='100%'data-nav-position='top' data-nav='thumbs' data-allowfullscreen='true'>
+	<div class="col-md-6">
+		<div class="fotorama" data-width='100%' data-nav-position='bottom' data-nav='thumbs' data-allowfullscreen='true'>
 		<img src="/images/furniture/3/1.jpg" alt="">
 		<img src="/images/furniture/3/2.jpg" alt="">
 		<img src="/images/furniture/3/3.jpg" alt="">
+		<img src="/images/furniture/meet-interriour.jpg" alt="">
 		</div>	
 	</div>
-	<div class="col-md-12">
-		<img src="/images/furniture/meet-interriour.jpg" class='img-responsive img-thumbnail' alt="">
+	<div class="col-md-6">
+		<table class='table '>
+			<tbody>
+				<tr>
+					<td>Размеры</td>
+					<td>L 104 cm / 40,95”<br>D 41 cm / 16,15”<br>H 44 сm / 17,3”</td>
+				</tr>
+				<tr>
+					<td>Описание изделия</td>
+					<td>
+						Банкетка в данном исполнении изготовлена из пищевой нержавеющей стали. Высокая степень полировки до зеркального отражения. Мягкое сиденье выполнено из светлого велюра серо- голубого цвета.
+					</td>
+				</tr>
+				<tr>
+					<td>Материал изделия</td>
+					<td>Полированная нержавеющая сталь, велюр</td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		<img src="/images/furniture/3/furniture-3-schema.png" class='img-responsive' alt="">
 	</div>
 
 </div>

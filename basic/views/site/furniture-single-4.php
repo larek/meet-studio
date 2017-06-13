@@ -1,8 +1,9 @@
 <?
 $this->title = 'Вешалка для одежды';
 $this->registerJsFile('/bower_components/fotorama/fotorama.js',['depends' => [\yii\web\JqueryAsset::className()]]);
+$this->registerJsFile('/js/ban-download-img.js',['depends' => [\yii\web\JqueryAsset::className()]]);
 $this->registerCssFile('/bower_components/fotorama/fotorama.css');
-$this->registerCssFile("https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css");
+$this->registerCssFile("https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css");
 ?>
 <div class="row">
 	<div class="col-md-12">
@@ -11,7 +12,7 @@ $this->registerCssFile("https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap
 </div>
 <div class="row">
 	<div class="col-md-6">
-		<div class="fotorama" data-width='100%'data-nav-position='top' data-nav='thumbs' data-allowfullscreen='true'>
+		<div class="fotorama" data-width='100%' data-nav-position='bottom' data-nav='thumbs' data-allowfullscreen='true'>
 		<img src="/images/furniture/4/1.jpg" alt="">
 		<img src="/images/furniture/4/2.jpg" alt="">
 		<img src="/images/furniture/4/3.jpg" alt="">
@@ -40,6 +41,8 @@ $this->registerCssFile("https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap
 				</tr>
 			</tbody>
 		</table>
+		<br>
+		<img src="/images/furniture/4/furniture-4-schema.png" class='img-responsive' alt="">
 	</div>
 
 </div>
