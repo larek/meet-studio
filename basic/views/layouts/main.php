@@ -62,7 +62,7 @@ AppAsset::register($this);
 </div>
 <div class="footer">
 	<div class="footer-content">
-		<div class="footer-inner-link">
+		<div class="footer-inner-link" style='display:none'>
 			<div class="footer-inner-link-title">
 				<p>Полезная информация</p>
 			</div>
