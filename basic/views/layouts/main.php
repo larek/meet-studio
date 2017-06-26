@@ -14,6 +14,9 @@ AppAsset::register($this);
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
 <head>
+	<meta name="yandex-verification" content="bf42f3160d0f5000" />
+	<meta name="google-site-verification" content="i2UHaZtzSSdIqoNxTXjL1B_DlBO4dOSJ2Yilnu2g5As" />
+
     <meta charset="<?= Yii::$app->charset ?>">
     <!-- <meta name="viewport" content="width=1200px, initial-scale=1"> -->
     <?= Html::csrfMetaTags() ?>
