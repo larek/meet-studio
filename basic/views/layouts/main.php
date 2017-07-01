@@ -216,9 +216,10 @@ var s = document.createElement('script'); s.type = 'text/javascript'; s.async = 
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="myModalLabel">Связаться с нами</h4>
       </div>
+      <div class="modal-sub-header">
+      	<p>Сообщите свои контактные данные и мы свяжемся с вами в ближайшее время</p>
+      </div>
       <div class="modal-body">
-        <p>Сообщите свои контактные данные и мы свяжемся с вами в ближайшее время</p>
-        <br>
         <div class="form-group formGroupCallbackName">
 			<label for="exampleInputEmail1">Как можно к вам обращаться?</label>
 			<input type="text" class="form-control callbackName" placeholder="Ваше имя">
