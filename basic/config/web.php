@@ -14,15 +14,26 @@ $config = [
         ]
     ],
     'components' => [
-        // 'view' => [
-        //     'theme' => [
-        //         'basePath' => '@app/themes/basic',
-        //         'baseUrl' => '@app/themes/basic',
-        //         'pathMap' => [
-        //             '@app/views' => '@app/themes/basic',
-        //         ],
-        //     ]
-        // ],
+        'assetManager' => [
+            'class' => 'yii\web\AssetManager',
+            'bundles' => [
+                        'yii\web\JqueryAsset' => [
+                            'js' => [
+                                YII_ENV_DEV ? 'jquery.js' : 'jquery.min.js'
+                            ]
+                        ],
+                        'yii\bootstrap\BootstrapAsset' => [
+                            'css' => [
+                                YII_ENV_DEV ? 'css/bootstrap.css' :         'css/bootstrap.min.css',
+                            ]
+                        ],
+                        'yii\bootstrap\BootstrapPluginAsset' => [
+                            'js' => [
+                                YII_ENV_DEV ? 'js/bootstrap.js' : 'js/bootstrap.min.js',
+                            ]
+                        ]
+            ],
+        ],
         'str2url' => [
             'class' => 'app\components\str2url',
         ],
