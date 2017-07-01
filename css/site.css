@@ -34,12 +34,12 @@ width:100%;
 }
 
 .circle1 {
-    height: 60px;
-    width: 60px;
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
     background: black;
     position: absolute;
-    margin: 10px 860px;
+    margin: -50px 612px;
 }
 
 .circle2 {
@@ -131,4 +131,10 @@ span.btn-fotorama-fullscreen {
 span.btn-fotorama-fullscreen:hover {
     background: #272626;
     color:white;
+}
+
+.phoneHeader {
+    font-size: 20px;
+    padding: 5px 0px;
+    display: inline-block;
 }

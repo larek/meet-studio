@@ -53,8 +53,8 @@ $config = [
          'transport' => [
              'class' => 'Swift_SmtpTransport',
              'host' => 'smtp.yandex.ru',  // e.g. smtp.mandrillapp.com or smtp.gmail.com
-             'username' => 'satellitenn.store@yandex.ru',
-             'password' => 'avatar910',
+             'username' => 'saitom@yandex.ru',
+             'password' => 'avatarka9101029991',
              'port' => '587', // Port 25 is a very common port too
              'encryption' => 'tls', // It is often used, check your provider or mail server specs
          ],

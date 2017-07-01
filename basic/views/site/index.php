@@ -20,8 +20,6 @@ $this->registerJs('
 ?>
 	
 
-
-
 <div class="fotorama">
 
 </div>

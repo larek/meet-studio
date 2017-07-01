@@ -15,15 +15,7 @@ use yii\helpers\Html;
 </head>
 <body>
     <?php $this->beginBody() ?>
-    <h2>Информация о заказе</h2>
-    <p>Имя - <?= $content['name'];?></p>
-    <p>Email - <?= $content['email'];?></p>
-    <p>Телефон - <?= $content['phone'];?></p>
-    <p>Регион (город) - <?= $content['city'];?></p>
-    <p>Комментарий - <?= $content['comment'];?></p>
-    <p>Дата - <?= $content['date'];?></p>
-    <p>Способ оплаты - <?= $content['method'];?></p>
-    <p>Метод доставки - <?= $content['delivery'];?></p>
+    <?= $content?>
     
     <?php $this->endBody() ?>
 </body>

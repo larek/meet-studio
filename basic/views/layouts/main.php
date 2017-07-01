@@ -34,10 +34,24 @@ AppAsset::register($this);
 	<div class="circle1"></div>
 	<div class="circle2"></div>
 	<div class="circle3"></div>
-	<div class="logo">
-		<a href="/">
-			<img id="logo" src="/images/logo.png" alt="BRABBU logo" style="margin-top: 14px;">
-		</a>
+	<div class="container-custom">
+		<div class="col-md-9">
+			<div class="logo">
+				<a href="/">
+					<img id="logo" src="/images/logo.png" alt="BRABBU logo">
+				</a>
+			</div>
+		</div>
+		<div class="col-md-3 text-center">
+			<span class='phoneHeader'>+7-831-284-40-24</span>
+			<br>
+			<span class='phoneHeader'>+7-905-192-12-34</span>
+			<br>
+			<!-- Button trigger modal -->
+				<span type="button" class="btn btn-default" data-toggle="modal" data-target="#callBack">
+				  Связаться с нами
+				</span>
+		</div>
 	</div>
 	
     <div class="nav">
@@ -193,6 +207,34 @@ var s = document.createElement('script'); s.type = 'text/javascript'; s.async = 
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/45113835" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
+
+<!-- Modal -->
+<div class="modal fade" id="callBack" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Связаться с нами</h4>
+      </div>
+      <div class="modal-body">
+        <p>Сообщите свои контактные данные и мы свяжемся с вами в ближайшее время</p>
+        <br>
+        <div class="form-group formGroupCallbackName">
+			<label for="exampleInputEmail1">Как можно к вам обращаться?</label>
+			<input type="text" class="form-control callbackName" placeholder="Ваше имя">
+		</div>
+		<div class="form-group formGroupCallbackContact">
+			<label for="exampleInputEmail1">Как мы можем связаться с вами?</label>
+			<input type="text" class="form-control callbackContact" placeholder="Номер телефона или email">
+		</div>
+		<div class="noticeBlock"></div>
+      </div>
+      <div class="modal-footer">
+        <span class="btn btn-default btn-callBack">Отправить</span>
+      </div>
+    </div>
+  </div>
+</div>
 
 <?php $this->endBody() ?>
 </body>

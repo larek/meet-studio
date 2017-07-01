@@ -123,6 +123,18 @@ class SiteController extends Controller
         }
     }
 
+    // Callback event
+    public function actionCallback(){
+        $name = $_POST['data']['name'];
+        $contact = $_POST['data']['contact'];
+        $result = Yii::$app->mail->compose('layouts/callback',['name' => $name,'contact' => $contact])
+                ->setFrom(['saitom@yandex.ru' => 'meet-studio.ru'])
+                ->setTo(['t9101029991@gmail.com'])
+                ->setSubject('Обратная связь с сайта meet-studio.ru / '.date("Y-m-d h:i:s"))
+                ->send();
+        echo json_encode($result);
+    }
+
     public function actionAbout()
     {
         return $this->render('about');
