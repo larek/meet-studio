@@ -10,9 +10,9 @@ $this->registerJs('
 			ratio: 2/1,
 			autoplay: 2000,
 			data:[
-				{img: "/images/meet-slider1-background.png", fit: "cover",html: "<img src=\"/images/meet-slider1-image1-reverse.png\" style=\"height:100%\"><img src=\"/images/meet-slider1-image2.png\" style=\"position: absolute;top: -40%;height: 140%;right: 0;\"><div class=\"\" style=\"position: absolute;top: 100px;width: 88%;text-align: center;font-size: 30px;\">ALABAMA / Стол*</div><div style=\"position: absolute;top: 200px;width: 50%;text-align: center;left: 19%;font-size:19px\">Современный, утонченный и изящный стол. Подходитдля классическогои современного интерьера. Идеально в писывается в любое пространство</div><div style=\"bottom: 15px;position: absolute;width: 50%;text-align: center;left: 19%;\">Это изделие ЛИДЕР ПРОДАЖ</div>"},
-				{img: "/images/meet-slide-2.jpg",fit:"cover",html:"<div class=\"slide-caption\"><h3>Мебель</h3><a href=\"#\" class=\"btn-light\">Подробнее</a></div>"},
-				{img: "/images/meet-slide-3.jpg",fit:"cover",html:"<div class=\"slide-caption\"><h3>Каменный шпон</h3><a href=\"/decor/1\" class=\"btn-light\">Подробнее</a></div>"}
+				{img: "/images/meet-slide-1-20170701.jpg"},
+				{img: "/images/meet-slide-2-20170701.jpg",fit:"cover",html:"<div class=\"slide-caption\"><h3>Мебель</h3><a href=\"#\" class=\"btn-light\">Подробнее</a></div>"},
+				{img: "/images/meet-slide-3-20170701.jpg",fit:"cover",html:"<div class=\"slide-caption\"><h3>Каменный шпон</h3><a href=\"/decor/1\" class=\"btn-light\">Подробнее</a></div>"}
 			],
 		});
 	');
@@ -36,7 +36,7 @@ $this->registerJs('
 				<ul class="slides">
 					<li class="box-hover">
 						<a href="/decor/2">
-				    		<img src="/images/meet-finish.png" />
+				    		<img src="/images/meet-finish-20170701.jpg" />
 				    	</a>
 						<div class="hover-homepage background-color-hover" style='margin-bottom:20px'>
 							<span class="name">
@@ -57,7 +57,7 @@ $this->registerJs('
 				<ul class="slides">
 					<li class="box-hover">
 						<a href="/decor/1">
-							<img src="/images/meet-stone.jpg" class="zindex_bottom"/>
+							<img src="/images/meet-stone-20170701.jpg" class="zindex_bottom"/>
 						</a>
 						<div class="hover-homepage background-color-hover" style='margin-bottom:20px'>
 							<span class="name">
