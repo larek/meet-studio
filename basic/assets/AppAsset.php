@@ -18,7 +18,7 @@ class AppAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        'css/default.css?v=1.0.3',
+        'css/default.css?v=1.0.4',
         'css/normalize.css',
         // 'css/docs.css ',
         'css/parsley.css',
@@ -41,6 +41,6 @@ class AppAsset extends AssetBundle
     ];
     public $depends = [
         'yii\web\YiiAsset',
-        // 'yii\bootstrap\BootstrapAsset',
+        'yii\bootstrap\BootstrapAsset',
     ];
 }

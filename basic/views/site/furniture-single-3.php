@@ -3,7 +3,6 @@ $this->title = 'Банкетка';
 $this->registerJsFile('/bower_components/fotorama/fotorama.js',['depends' => [\yii\web\JqueryAsset::className()]]);
 $this->registerJsFile('/js/ban-download-img.js',['depends' => [\yii\web\JqueryAsset::className()]]);
 $this->registerCssFile('/bower_components/fotorama/fotorama.css');
-$this->registerCssFile("https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css");
 ?>
 <div class="row">
 	<div class="col-md-12">

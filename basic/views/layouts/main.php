@@ -60,7 +60,7 @@ AppAsset::register($this);
 	<div class="clear"></div>
 </div>
 
-<div class="container">
+<div class="container-custom">
 <?= $content?>
 </div>
 <div class="footer">
