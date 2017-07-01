@@ -75,19 +75,19 @@ $this->registerJs('
 	</div>
 	<div id="middle-info">
 		<div class="middle-info-box">
-			<a href="">КОНТАКТЫ</a>
+			<a href="/contacts">КОНТАКТЫ</a>
 		</div>
 		<div class="verticalLine"></div>
 		<div class="middle-info-box">
-			<a href="">ИНТЕРЬЕР</a>
+			<a href="/projects/index">ИНТЕРЬЕР</a>
 		</div>
 		<div class="verticalLine"></div>
 		<div class="middle-info-box">
-			<a href="">МЕБЕЛЬ</a>
+			<a href="/furniture">МЕБЕЛЬ</a>
 		</div>
 		<div class="verticalLine"></div>
 		<div class="middle-info-box">
-			<a href="" target="_blank">ДЕКОР</a>
+			<a href="/decor" target="_blank">ДЕКОР</a>
 		</div>
 		<div class="clear"></div>
 	</div>

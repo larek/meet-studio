@@ -18,25 +18,9 @@ class AppAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        'css/default.css?v=1.0.4',
-        'css/normalize.css',
-        // 'css/docs.css ',
-        'css/parsley.css',
-        'css/easing.css',
-        'css/scrollToTop.css',
-        'css/flexslider.css',
-        'css/style-ready-to-ship.css',
-        'css/site.css?v=1.1.0'
+        'css/site.css?v=1.1.3'
     ];
     public $js = [
-        // 'js/affix.js',
-        // 'js/jquery.flexslider.js',
-        // 'js/demo.js',
-        // 'js/jquery.mousewheel.js',
-        // 'js/jquery-scrollToTop.js',
-        // 'js/modernizr.js',
-        // 'js/jquery.easing.js',
-        // 'js/parsley.js',
         'js/callback.js?v=1.0.2',
         'js/site.js?v=1.0.2'
     ];
