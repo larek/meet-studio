@@ -26,7 +26,7 @@ class AppAsset extends AssetBundle
         'css/scrollToTop.css',
         'css/flexslider.css',
         'css/style-ready-to-ship.css',
-        'css/site.css?v=1.0.9'
+        'css/site.css?v=1.1.0'
     ];
     public $js = [
         // 'js/affix.js',
@@ -37,7 +37,7 @@ class AppAsset extends AssetBundle
         // 'js/modernizr.js',
         // 'js/jquery.easing.js',
         // 'js/parsley.js',
-        'js/callback.js?v=1.0.1',
+        'js/callback.js?v=1.0.2',
         'js/site.js?v=1.0.2'
     ];
     public $depends = [

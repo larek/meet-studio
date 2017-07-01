@@ -49,7 +49,7 @@ AppAsset::register($this);
 			<br>
 			<!-- Button trigger modal -->
 				<span type="button" class="btn btn-default" data-toggle="modal" data-target="#callBack">
-				  Связаться с нами
+				  Получить консультацию
 				</span>
 		</div>
 	</div>
@@ -214,10 +214,9 @@ var s = document.createElement('script'); s.type = 'text/javascript'; s.async = 
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Связаться с нами</h4>
       </div>
       <div class="modal-sub-header">
-      	<p>Сообщите свои контактные данные и мы свяжемся с вами в ближайшее время</p>
+      	<p>Мы с радостью проконсультируем вас о стоимости и сроках выполнения работ в сфере дизайна интерьера, производства авторской мебели и декорирования. Сообщите нам свои контактные данные для обратной связи и мы свяжемся с вами в ближайшее время.</p>
       </div>
       <div class="modal-body">
         <div class="form-group formGroupCallbackName">
@@ -227,6 +226,10 @@ var s = document.createElement('script'); s.type = 'text/javascript'; s.async = 
 		<div class="form-group formGroupCallbackContact">
 			<label for="exampleInputEmail1">Как мы можем связаться с вами?</label>
 			<input type="text" class="form-control callbackContact" placeholder="Номер телефона или email">
+		</div>
+		<div class="form-group formGroupCallbackMessage">
+			<label for="exampleInputEmail1">По какому вопросу вы бы хотели проконсультироваться?</label>
+			<textarea type="text" class="form-control callbackMessage" rows='3' placeholder="Опишите, пожалуйста, что вас интересует и тогда мы более точно сможем подготовить необходимую информацию перед тем как связаться с вами"></textarea>
 		</div>
 		<div class="noticeBlock"></div>
       </div>

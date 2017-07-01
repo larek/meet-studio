@@ -127,7 +127,8 @@ class SiteController extends Controller
     public function actionCallback(){
         $name = $_POST['data']['name'];
         $contact = $_POST['data']['contact'];
-        $result = Yii::$app->mail->compose('layouts/callback',['name' => $name,'contact' => $contact])
+        $message = $_POST['data']['message'];
+        $result = Yii::$app->mail->compose('layouts/callback',['name' => $name,'contact' => $contact, 'message' => $message])
                 ->setFrom(['saitom@yandex.ru' => 'meet-studio.ru'])
                 ->setTo(['t9101029991@gmail.com'])
                 ->setSubject('Обратная связь с сайта meet-studio.ru / '.date("Y-m-d h:i:s"))
