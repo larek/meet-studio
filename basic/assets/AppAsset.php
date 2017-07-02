@@ -22,7 +22,6 @@ class AppAsset extends AssetBundle
     ];
     public $js = [
         'js/callback.js?v=1.0.2',
-        'js/site.js?v=1.0.2'
     ];
     public $depends = [
         'yii\web\YiiAsset',
