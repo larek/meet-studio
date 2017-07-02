@@ -37,6 +37,17 @@ class SiteController extends Controller
         ];
     }
 
+    public function beforeAction($action)
+    {
+        // ...set `$this->enableCsrfValidation` here based on some conditions...
+        // call parent method that will check CSRF if such property is true.
+        if ($action->id === 'callback') {
+            # code...
+            $this->enableCsrfValidation = false;
+        }
+        return parent::beforeAction($action);
+    }
+
     public function actions()
     {
         return [
@@ -131,7 +142,7 @@ class SiteController extends Controller
         $result = Yii::$app->mail->compose('layouts/callback',['name' => $name,'contact' => $contact, 'message' => $message])
                 ->setFrom(['saitom@yandex.ru' => 'meet-studio.ru'])
                 ->setTo(['t9101029991@gmail.com'])
-                ->setSubject('Обратная связь с сайта meet-studio.ru / '.date("Y-m-d h:i:s"))
+                ->setSubject('Обратная связь с сайта meet-studio.ru / '.date("Y-m-d H:i:s"))
                 ->send();
         echo json_encode($result);
     }

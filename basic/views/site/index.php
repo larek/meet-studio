@@ -2,8 +2,6 @@
 use yii\helpers\Html;
 /* @var $this yii\web\View */
 $this->title = 'Студия дизайна интерьера и мебели Юлии Сазоновой';
-$this->registerJsFile('/bower_components/fotorama/fotorama.js',['depends' => [\yii\web\JqueryAsset::className()]]);
-$this->registerCssFile('/bower_components/fotorama/fotorama.css');
 $this->registerJs('
 		$(".fotorama").fotorama({
 			width: "100%",

@@ -6,3 +6,6 @@
 # uploads file
 /uploads
 
+/node_modules
+/bower_components
+

@@ -19,17 +19,17 @@ $config = [
             'bundles' => [
                         'yii\web\JqueryAsset' => [
                             'js' => [
-                                'jquery.min.js'
+                                // 'jquery.min.js'
                             ]
                         ],
                         'yii\bootstrap\BootstrapAsset' => [
                             'css' => [
-                                'css/bootstrap.min.css',
+                                // 'css/bootstrap.min.css',
                             ]
                         ],
                         'yii\bootstrap\BootstrapPluginAsset' => [
                             'js' => [
-                                'js/bootstrap.min.js',
+                                // 'js/bootstrap.min.js',
                             ]
                         ]
             ],
