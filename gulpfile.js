@@ -59,4 +59,4 @@ gulp.task('lint', () => {
     .pipe(eslint.failAfterError());
 });
 
-gulp.task('default', ['scripts'])
+gulp.task('default', ['scripts','css'])
