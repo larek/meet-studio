@@ -18,14 +18,19 @@ $this->title = 'Услуги';
 	<div class="singleimage">
 		<img width="300" height="200" oncontextmenu="return false;" src="/images/meet-studio-stars-5.png" class="attachment-gallery wp-post-image">
 	</div>
-	<div class="afterpicture">Дизайн проект 5 звезд</div>
+	<div class="afterpicture">
+		<h4>Дизайн проект 5 звезд</h4>
+		<span class='service-price'>1450 р/м2</span>
+	</div>
 </div>
 <div class="imageblock" onclick="window.location = '/service/4'">
 	<div class="singleimage">
 		<img width="300" height="200" oncontextmenu="return false;" src="/images/meet-studio-stars-4.png" class="attachment-gallery wp-post-image">
 	</div>
-	<div class="afterpicture">Дизайн проект 4 звезды</div>
-	<div class="afterpicture sale lebel">ВСЕГО ЗА 650 руб/м2</div>
+	<div class="afterpicture">
+		<h4>Дизайн проект 4 звезды</h4>
+		<div class='service-price'><span class='red-price'>650 р/м2</span> <del>1100 р/м2</del></div>
+	</div>
 </div>
 	
 

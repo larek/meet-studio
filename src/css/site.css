@@ -5108,3 +5108,12 @@ span.btn-fotorama-fullscreen:hover {
   color: white;
   font-size: 12px;
 }
+
+.service-price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.red-price{
+  color:#cc0000;
+}
