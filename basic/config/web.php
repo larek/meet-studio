@@ -97,6 +97,7 @@ $config = [
                 'real-project' => 'site/real-project',
                 'decor' => 'site/decor',
                 'decor/<id>' => 'site/decor-single',
+                'decor/<id>/<subid>' => 'site/decor-single',
                 'furniture' => 'site/furniture',
                 'furniture/<id>' => 'site/furniture-single',
                 'service' => 'site/service',

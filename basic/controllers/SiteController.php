@@ -90,7 +90,7 @@ class SiteController extends Controller
     }
 
     public function actionDecorSingle($id){
-        return $this->render('decor-single-'.$id);
+        return $this->render( isset($_GET['subid']) ? 'decor-single-'.$id."-".$_GET['subid'] : 'decor-single-'.$id);
     }
 
     public function actionFurniture(){

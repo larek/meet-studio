@@ -1,25 +1,27 @@
-<?
-$this->title = 'Наши финиши';
-$this->registerJsFile('/bower_components/fotorama/fotorama.js',['depends' => [\yii\web\JqueryAsset::className()]]);
-$this->registerCssFile('/bower_components/fotorama/fotorama.css');
+<?php
+
+use yii\helpers\Html;
+use yii\widgets\ListView;
+
+/* @var $this yii\web\View */
+/* @var $searchModel app\models\ProjectsSearch */
+/* @var $dataProvider yii\data\ActiveDataProvider */
+
+$this->title = 'Финиши';
 ?>
-<div class="row">
-	<div class="col-md-12">
-		<h1>Наши финиши</h1>
+<h1>Финиши</h1>
+<section class="mainwrapper clearfix">
+    <div class="clear" style="margin-bottom:30px;"></div>
+<section id="projects">
+
+<div class="imageblock" onclick="window.location = '/decor/2/1'">
+	<div class="singleimage">
+		<img width="300" height="200" oncontextmenu="return false;" src="/images/decor/2/meet-studio-decor-2-thumb.jpg" class="attachment-gallery wp-post-image">
 	</div>
+	<div class="afterpicture">Кожа коллекции OLD</div>
 </div>
-<div class="row">
-	<div class="col-md-6">
-		<div class="fotorama" data-width='100%' data-nav-position='bottom' data-nav='thumbs' data-allowfullscreen='true'>
-			<img src="/images/decor/2/7.jpg" alt="">
-			<img src="/images/decor/2/8.jpg" alt="">
-			<img src="/images/decor/2/9.jpg" alt="">
-			<img src="/images/decor/2/10.jpg" alt="">
-			<img src="/images/decor/2/11.jpg" alt="">
-			<img src="/images/decor/2/12.jpg" alt="">
-		</div>
-	</div>
-	<div class="col-md-6">
-		<p>Кожа коллекции OLD с эффектом старения! Без тиснения. Сохраняющая на себе прижизненные пороки на шкуре животного. Эта кожа высокого качества и относится к Категории «А».</p>
-	</div>
-</div>
+
+
+			<div class="clear"></div>
+		</section>
+</section>
