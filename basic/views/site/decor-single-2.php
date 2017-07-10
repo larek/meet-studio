@@ -24,7 +24,19 @@ $this->title = 'Финиши';
 	<div class="singleimage">
 		<img width="300" height="200" oncontextmenu="return false;" src="/images/decor/2/2/7.jpg" class="attachment-gallery wp-post-image">
 	</div>
-	<div class="afterpicture">Натуральная кожа "TOSCANA"</div>
+	<div class="afterpicture">Натуральная кожа TOSCANA</div>
+</div>
+<div class="imageblock" onclick="window.location = '/decor/2/3'">
+	<div class="singleimage">
+		<img width="300" height="200" oncontextmenu="return false;" src="/images/decor/2/3/7.jpg" class="attachment-gallery wp-post-image">
+	</div>
+	<div class="afterpicture">Натуральная кожа STELLA CLEAN</div>
+</div>
+<div class="imageblock" onclick="window.location = '/decor/2/4'">
+	<div class="singleimage">
+		<img width="300" height="200" oncontextmenu="return false;" src="/images/decor/2/4/6.jpg" class="attachment-gallery wp-post-image">
+	</div>
+	<div class="afterpicture">Натуральная кожа SOLO</div>
 </div>
 
 
