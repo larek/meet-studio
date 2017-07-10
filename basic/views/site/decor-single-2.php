@@ -20,6 +20,12 @@ $this->title = 'Финиши';
 	</div>
 	<div class="afterpicture">Кожа коллекции OLD</div>
 </div>
+<div class="imageblock" onclick="window.location = '/decor/2/2'">
+	<div class="singleimage">
+		<img width="300" height="200" oncontextmenu="return false;" src="/images/decor/2/2/7.jpg" class="attachment-gallery wp-post-image">
+	</div>
+	<div class="afterpicture">Натуральная кожа "TOSCANA"</div>
+</div>
 
 
 			<div class="clear"></div>

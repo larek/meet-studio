@@ -1,11 +1,9 @@
 <?
-$this->title = 'Наши финиши';
-$this->registerJsFile('/bower_components/fotorama/fotorama.js',['depends' => [\yii\web\JqueryAsset::className()]]);
-$this->registerCssFile('/bower_components/fotorama/fotorama.css');
+$this->title = 'Кожа коллекции OLD';
 ?>
 <div class="row">
 	<div class="col-md-12">
-		<h1>Наши финиши</h1>
+		<h1>Кожа коллекции OLD</h1>
 	</div>
 </div>
 <div class="row">
