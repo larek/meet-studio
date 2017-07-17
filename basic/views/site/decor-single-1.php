@@ -1,7 +1,7 @@
 <?
 $this->title = 'Каменный шпон';
-$this->registerJsFile('/bower_components/fotorama/fotorama.js',['depends' => [\yii\web\JqueryAsset::className()]]);
-$this->registerCssFile('/bower_components/fotorama/fotorama.css');
+// $this->registerJsFile('/bower_components/fotorama/fotorama.js',['depends' => [\yii\web\JqueryAsset::className()]]);
+// $this->registerCssFile('/bower_components/fotorama/fotorama.css');
 ?>
 <h1>Каменный шпон</h1>
 <div class="fotorama" data-width='100%' data-nav-position='top' data-nav='thumbs' data-allowfullscreen='true'>
