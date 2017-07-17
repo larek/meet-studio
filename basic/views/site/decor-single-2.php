@@ -62,12 +62,6 @@ $this->title = 'Кожа';
 	</div>
 	<div class="afterpicture">Натуральная кожа LOFT</div>
 </div>
-<div class="imageblock" onclick="window.location = '/decor/2/9'">
-	<div class="singleimage">
-		<img width="300" height="200" oncontextmenu="return false;" src="/images/decor/2/9/1.jpg" class="attachment-gallery wp-post-image">
-	</div>
-	<div class="afterpicture">Натуральная кожа OLD</div>
-</div>
 <div class="imageblock" onclick="window.location = '/decor/2/10'">
 	<div class="singleimage">
 		<img width="300" height="200" oncontextmenu="return false;" src="/images/decor/2/10/1.jpg" class="attachment-gallery wp-post-image">
