@@ -89,6 +89,10 @@ class SiteController extends Controller
         return $this->render('decor');
     }
 
+    public function actionDecorFinish(){
+        return $this->render('decor-finish');
+    }
+
     public function actionDecorSingle($id){
         return $this->render( isset($_GET['subid']) ? 'decor-single-'.$id."-".$_GET['subid'] : 'decor-single-'.$id);
     }

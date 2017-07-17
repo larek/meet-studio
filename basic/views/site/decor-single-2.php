@@ -7,9 +7,9 @@ use yii\widgets\ListView;
 /* @var $searchModel app\models\ProjectsSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Финиши';
+$this->title = 'Кожа';
 ?>
-<h1>Финиши</h1>
+<h1>Кожа</h1>
 <section class="mainwrapper clearfix">
     <div class="clear" style="margin-bottom:30px;"></div>
 <section id="projects">

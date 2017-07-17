@@ -20,7 +20,7 @@ $this->title = 'Декор';
 	</div>
 	<div class="afterpicture">Каменный шпон</div>
 </div>
-<div class="imageblock" onclick="window.location = '/decor/2'">
+<div class="imageblock" onclick="window.location = '/decor-finish'">
 	<div class="singleimage">
 		<img width="300" height="200" oncontextmenu="return false;" src="/images/decor/2/meet-studio-decor-2-thumb.jpg" class="attachment-gallery wp-post-image">
 	</div>
