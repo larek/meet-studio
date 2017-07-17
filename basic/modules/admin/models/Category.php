@@ -3,19 +3,21 @@
 namespace app\modules\admin\models;
 
 use Yii;
-
+use app\modules\admin\models\Category;
 /**
  * This is the model class for table "category".
  *
  * @property integer $id
+ * @property integer $pid
+ * @property string $title
  * @property integer $order_id
  * @property integer $active
- * @property integer $header
- * @property string $title
- * @property string $image
  */
 class Category extends \yii\db\ActiveRecord
 {
+    public function getCategorytitle(){
+        return $this->hasOne(self::className(),['id' => 'pid']);
+    }
     /**
      * @inheritdoc
      */
@@ -30,9 +32,9 @@ class Category extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['title'], 'required'],
-            [['order_id', 'active', 'header'], 'integer'],
-            [['title', 'image', 'url'], 'string', 'max' => 250]
+            [['pid', 'title'], 'required'],
+            [['pid','order_id','active'], 'integer'],
+            [['title'], 'string', 'max' => 250]
         ];
     }
 
@@ -43,11 +45,10 @@ class Category extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'active' => 'Категория активна',
-            'order_id' => 'Порядковый номер категории',
-            'header' => 'Категория отображается в шапке',
+            'pid' => 'Родительская категория',
             'title' => 'Название',
-            'image' => 'Изображение',
+            'order_id' => 'Порядок',
+            'active' => 'Активная категория'
         ];
     }
 }

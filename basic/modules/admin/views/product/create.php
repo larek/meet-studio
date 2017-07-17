@@ -7,7 +7,7 @@ use yii\helpers\Html;
  * @var app\modules\admin\models\Product $model
  */
 
-$this->title = 'Создать товар';
+$this->title = 'Создние товара';
 $this->params['breadcrumbs'][] = ['label' => 'Товары', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
@@ -17,6 +17,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <?= $this->render('_form', [
         'model' => $model,
+        'property' => $property
     ]) ?>
 
 </div>

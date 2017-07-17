@@ -1,7 +1,9 @@
 <?php
 
 use yii\helpers\Html;
+use yii\helpers\ArrayHelper;
 use yii\widgets\ActiveForm;
+use app\modules\admin\models\Category;
 
 /**
  * @var yii\web\View $this
@@ -14,18 +16,30 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
+    <?
+    
+    if(!$model->isNewRecord){
+        $modelCategory = Category::find()->andWhere(['pid' => 0])->andWhere('id!='.$model->id)->all();
+    }else{
+        $modelCategory = Category::find()->andWhere(['pid' => 0])->all();
+    }
+    $dropDownListItems = ArrayHelper::map($modelCategory,'id','title');
+    $dropDownListItems[0] = 'Категория верхнего уровня';
+    ksort($dropDownListItems);
+   
+    ?>
+
+    <?= $form->field($model, 'pid')->dropDownList(
+        [
+          $dropDownListItems
+        ]
+    ); ?>
+
     <?= $form->field($model, 'title')->textInput(['maxlength' => 250]) ?>
 
     <?= $form->field($model, 'order_id')->textInput() ?>
 
-	
-	<?
-	echo $model->image && $model->image!=="" ? Html::img('/uploads/300x200/'.$model->image) : "";
-	?>
-    <?= $form->field($model, 'image')->fileInput(['maxlength' => 250]) ?>
-
-    <?= $form->field($model, 'active')->checkbox();?>
-    <?= $form->field($model, 'header')->checkbox();?>
+    <?= $form->field($model, 'active')->checkbox() ?> 
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Создать' : 'Обновить', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

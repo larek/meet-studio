@@ -21,23 +21,25 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'category_id') ?>
 
-    <?= $form->field($model, 'vendor_id') ?>
+    <?= $form->field($model, 'sku') ?>
+
+    <?= $form->field($model, 'vendor') ?>
 
     <?= $form->field($model, 'title') ?>
 
-    <?= $form->field($model, 'skuVendor') ?>
-
-    <?php // echo $form->field($model, 'sku') ?>
-
-    <?php // echo $form->field($model, 'photo') ?>
-
-    <?php // echo $form->field($model, 'description') ?>
-
-    <?php // echo $form->field($model, 'priceVendor') ?>
+    <?php // echo $form->field($model, 'quantity') ?>
 
     <?php // echo $form->field($model, 'price') ?>
 
-    <?php // echo $form->field($model, 'available') ?>
+    <?php // echo $form->field($model, 'cur') ?>
+
+    <?php // echo $form->field($model, 'description') ?>
+
+    <?php // echo $form->field($model, 'sale') ?>
+
+    <?php // echo $form->field($model, 'way') ?>
+
+    <?php // echo $form->field($model, 'active') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>

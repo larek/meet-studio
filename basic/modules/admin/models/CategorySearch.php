@@ -15,8 +15,8 @@ class CategorySearch extends Category
     public function rules()
     {
         return [
-            [['id'], 'integer'],
-            [['title', 'image'], 'safe'],
+            [['id', 'pid'], 'integer'],
+            [['title'], 'safe'],
         ];
     }
 
@@ -28,7 +28,7 @@ class CategorySearch extends Category
 
     public function search($params)
     {
-        $query = Category::find()->orderBy(['order_id' => SORT_ASC]);
+        $query = Category::find();
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
@@ -40,10 +40,10 @@ class CategorySearch extends Category
 
         $query->andFilterWhere([
             'id' => $this->id,
+            'pid' => $this->pid,
         ]);
 
-        $query->andFilterWhere(['like', 'title', $this->title])
-            ->andFilterWhere(['like', 'image', $this->image]);
+        $query->andFilterWhere(['like', 'title', $this->title]);
 
         return $dataProvider;
     }

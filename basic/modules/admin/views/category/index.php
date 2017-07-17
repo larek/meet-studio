@@ -21,26 +21,28 @@ $this->params['breadcrumbs'][] = $this->title;
     <p>
         <?= Html::a('Создать категорию', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
+    <?
+        function get_tree($tree, $pid)
+    {
+        $html = '';
+     
+        foreach ($tree as $row)
+        {
+            if ($row['pid'] == $pid)
+            {
+                $html .= '<li>' . "\n";
+                $html .= '    ' . $row['name'] . "\n";
+                $html .= '    ' . get_tree($tree, $row['id']);
+                $html .= '</li>' . "\n";
+            }
+        }
+     
+        return $html ? '<ul class="tree">' . $html . '</ul>' . "\n" : '';
+    }
+    ?>
+    
+        <?= get_tree($categoryArray,0);?>
+    
 
-    <?= GridView::widget([
-        'dataProvider' => $dataProvider,
-        'filterModel' => $searchModel,
-        'columns' => [
-            //['class' => 'yii\grid\SerialColumn'],
-            // 'order_id',
-            [
-                'attribute' => 'title',
-                'format' => 'raw',
-                'value' => function($data){
-                    return Html::a($data->title,['category/update', 'id' => $data->id])." #".$data->order_id;
-                }
-            ]
-            //'id',
-            // 'title',
-            //'image',
-
-            //['class' => 'yii\grid\ActionColumn'],
-        ],
-    ]); ?>
 
 </div>

@@ -19,17 +19,17 @@ $config = [
             'bundles' => [
                         'yii\web\JqueryAsset' => [
                             'js' => [
-                                // 'jquery.min.js'
+                                'jquery.min.js'
                             ]
                         ],
                         'yii\bootstrap\BootstrapAsset' => [
                             'css' => [
-                                // 'css/bootstrap.min.css',
+                                'css/bootstrap.min.css',
                             ]
                         ],
                         'yii\bootstrap\BootstrapPluginAsset' => [
                             'js' => [
-                                // 'js/bootstrap.min.js',
+                                'js/bootstrap.min.js',
                             ]
                         ]
             ],
@@ -37,6 +37,7 @@ $config = [
         'str2url' => [
             'class' => 'app\components\str2url',
         ],
+        'TreeViewAdmin' => 'app\components\TreeViewAdmin',
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'sjVhmKYfTYxZ9IzsJbpGLgMlZ_9BQIMo',

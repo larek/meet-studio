@@ -30,22 +30,39 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
+        
             'id',
-            'category_id',
-            'vendor_id',
-            'title',
-            'skuVendor',
+             [
+             'label' => 'Категория',
+             'value' => $model->category->title,
+             ],   
             'sku',
-            [
-                'attribute' => 'photo',
-                'format' => 'raw',
-                'value' => Html::img("/uploads/300x200/".$model->photo)
-            ],
-            'description:ntext',
-            'priceVendor',
+            'vendor',
+            'title',
+            'quantity',
             'price',
-            'available',
+            'cur',
+            'description',
+            'size',
+            'sale',
+            'way',
+            'onfactory',
+            'active',
+            'url',
+            ['label' => 'Длина (Ширина)', 'value' => $model->property->width],
+            ['label' => 'Глубина', 'value' => $model->property->depth],
+            ['label' => 'Высота', 'value' => $model->property->height],
+            ['label' => 'Диаметр', 'value' => $model->property->diameter],
+            ['label' => 'Абажур', 'value' => $model->property->shade],
+            ['label' => 'Тип цоколя', 'value' => $model->property->plinth],
+            ['label' => 'Мощность', 'value' => $model->property->power]
         ],
     ]) ?>
+
+    <?
+        foreach($model->images as $item){
+            echo Html::img('/uploads/300x200/'.$item->image);
+        }
+    ?>
 
 </div>

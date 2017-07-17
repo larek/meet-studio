@@ -8,7 +8,8 @@ use app\modules\admin\models\CategorySearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-use yii\imagine\Image;
+use yii\helpers\ArrayHelper;
+use yii\helpers\Html;
 
 /**
  * CategoryController implements the CRUD actions for Category model.
@@ -33,12 +34,21 @@ class CategoryController extends Controller
      */
     public function actionIndex()
     {
-        $searchModel = new CategorySearch;
-        $dataProvider = $searchModel->search(Yii::$app->request->getQueryParams());
+        $model = Category::find()->orderBy(['order_id' => SORT_ASC, 'title' => SORT_ASC])->all();
+        $categoryArray = ArrayHelper::toArray($model, [
+            'app\modules\admin\models\Category' => [
+                'name' => function($model){
+                    return Html::a($model->title,['update','id' => $model->id]);
+                },
+                'id' => 'id',
+                'pid' => 'pid'
+            ],
+        ]);
+       
 
         return $this->render('index', [
-            'dataProvider' => $dataProvider,
-            'searchModel' => $searchModel,
+            
+            'categoryArray' => $categoryArray
         ]);
     }
 
@@ -54,55 +64,17 @@ class CategoryController extends Controller
         ]);
     }
 
-   public function actionCreate()
+    /**
+     * Creates a new Category model.
+     * If creation is successful, the browser will be redirected to the 'view' page.
+     * @return mixed
+     */
+    public function actionCreate()
     {
         $model = new Category;
 
-        // if ($model->load(Yii::$app->request->post()) && $model->save()) {
-        if (Yii::$app->request->post()) {
-           if($_FILES['Category']['name']['image']!=""){
-              $errors= array();
-              $file_name = $_FILES['Category']['name']['image'];
-              $file_size = $_FILES['Category']['size']['image'];
-              $file_tmp = $_FILES['Category']['tmp_name']['image'];
-              $file_ext = pathinfo($_FILES['Category']['name']['image'])['extension'];
-              $file_new_name = md5($file_name)."_".time().".".$file_ext; 
-
-              $expensions= array("jpeg","jpg","png");
-              
-              if(in_array($file_ext,$expensions)=== false){
-                 $errors[]="extension not allowed, please choose a JPEG or PNG file.";
-              }
-              
-              if($file_size > 2097152) {
-                 $errors[]='File size must be excately 2 MB';
-              }
-              
-              if(empty($errors)==true) {
-                 move_uploaded_file($file_tmp,"uploads/".$file_new_name);
-                 $mode = \Imagine\Image\ManipulatorInterface::THUMBNAIL_INSET; // or THUMBNAIL_INSET
-                  $img = $_SERVER['DOCUMENT_ROOT']."/uploads/".$file_new_name;
-                  // $size = Image::getImagine()->open($img)->getSize()->widen(1000);
-
-                  Image::thumbnail($img, 300, 200, $mode)->save('uploads/300x200/'. $file_new_name, ['quality' => 100]);
-                  // Image::thumbnail($img, 1500, 500, $mode)->save('uploads/1500x500/'. $file_new_name, ['quality' => 100]);
-                 // echo "Success";
-              }else{
-                 print_r($errors);
-              }
-            $model->load(Yii::$app->request->post());
-            $model->image = $file_new_name;
-           }else{
-            $model->load(Yii::$app->request->post());
-          }
-
-            
-            $model->save();
-            $modelUrl = Category::findOne($model->id);
-            $modelUrl->url = Yii::$app->str2url->parse($model->title." ".$model->id);
-            $modelUrl->save();
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
-
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -119,55 +91,8 @@ class CategoryController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
-        $photo = $model->image;
-        // if ($model->load(Yii::$app->request->post()) && $model->save()) {
-        if (Yii::$app->request->post()) {
-            if($_FILES['Category']['name']['image']!=""){
-                
-              $errors= array();
-              $file_name = $_FILES['Category']['name']['image'];
-              $file_size = $_FILES['Category']['size']['image'];
-              $file_tmp = $_FILES['Category']['tmp_name']['image'];
-              $file_ext = pathinfo($_FILES['Category']['name']['image'])['extension'];
-              $file_new_name = md5($file_name)."_".time().".".$file_ext; 
 
-              $expensions= array("jpeg","jpg","png");
-              
-              if(in_array($file_ext,$expensions)=== false){
-                 $errors[]="extension not allowed, please choose a JPEG or PNG file.";
-              }
-              
-              if($file_size > 2097152) {
-                 $errors[]='File size must be excately 2 MB';
-              }
-              
-              if(empty($errors)==true) {
-                 move_uploaded_file($file_tmp,"uploads/".$file_new_name);
-                 $mode = \Imagine\Image\ManipulatorInterface::THUMBNAIL_INSET; // or THUMBNAIL_INSET
-                  $img = $_SERVER['DOCUMENT_ROOT']."/uploads/".$file_new_name;
-                  // $size = Image::getImagine()->open($img)->getSize()->widen(1000);
-
-                  Image::thumbnail($img, 300, 200, $mode)->save('uploads/300x200/'. $file_new_name, ['quality' => 100]);
-                  // Image::thumbnail($img, 1500, 500, $mode)->save('uploads/1500x500/'. $file_new_name, ['quality' => 100]);
-                 // echo "Success";
-              }else{
-                 print_r($errors);
-              }
-            $model->load(Yii::$app->request->post());
-            $model->image = $file_new_name;
-            //delete old photo
-            if(is_file("uploads/".$photo)){unlink("uploads/".$photo);}
-            if(is_file("uploads/300x200/".$photo)){unlink("uploads/300x200/".$photo);}
-           }else{
-            $model->load(Yii::$app->request->post());
-            $model->image = $photo;
-           }
-
-            
-            $model->save();
-            $modelUrl = Category::findOne($model->id);
-            $modelUrl->url = Yii::$app->str2url->parse($model->title." ".$model->id);
-            $modelUrl->save();
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['index']);
         } else {
             return $this->render('update', [
@@ -184,12 +109,7 @@ class CategoryController extends Controller
      */
     public function actionDelete($id)
     {
-        $model = $this->findModel($id);
-        $photo = $model->image;
-        //delete  photo
-            if(is_file("uploads/".$photo)){unlink("uploads/".$photo);}
-            if(is_file("uploads/300x200/".$photo)){unlink("uploads/300x200/".$photo);}
-        $model->delete();
+        $this->findModel($id)->delete();
 
         return $this->redirect(['index']);
     }

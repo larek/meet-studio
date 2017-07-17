@@ -7,9 +7,9 @@ use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
-use app\assets\AppAsset;
+use app\assets\AdminAsset;
 
-AppAsset::register($this);
+AdminAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -20,6 +20,7 @@ AppAsset::register($this);
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
+
 </head>
 <body>
 <?php $this->beginBody() ?>
@@ -27,8 +28,8 @@ AppAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => 'satellitenn.store',
-        'brandUrl' => Yii::$app->homeUrl,
+        'brandLabel' => 'meet-studio.ru',
+        'brandUrl' => '/admin',
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
@@ -36,32 +37,41 @@ AppAsset::register($this);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
-            ['label' => 'Главная', 'url' => ['/admin/default/index']],
-            ['label' => 'Категории', 'url' => ['/admin/category/index']],
-            ['label' => 'Производители', 'url' => ['/admin/vendor/index']],
-            ['label' => 'Товары', 'url' => ['/admin/product/index']],
-            ['label' => 'Страницы', 'url' => ['/admin/pages/index']],
-            ['label' => 'Слайдер', 'url' => ['/admin/slider/index']],
+            // ['label' => 'Главная', 'url' => ['default/index']],
+            ['label' => 'Товары', 'url' => ['product/index']],
+            ['label' => 'Категории', 'url' => ['category/index']],
             ['label' => 'Заказы', 'url' => ['/admin/order/index']],
+            ['label' => 'Страницы', 'url' => ['pages/index']],
+            ['label' => 'Новости', 'url' => ['news/index']],
+            ['label' => 'Пользователи', 
+                'items' => [
+                    ['label' => 'Подписчики', 'url' => ['subscribe/index']],
+                    ['label' => 'Заявки на мероприятие', 'url' => ['event-register/index']],
+                    ['label' => 'Профессионалы', 'url' => ['professional/index']],
+                ]
+            ],
+            ['label' => 'Партнеры', 
+                'items' => [
+                    ['label' => 'MHliving', 'url' => ['mcategory/index']],
+                    ['label' => 'Garda', 'url' => ['gcategory/index']]
+                ]
+            ],
+            ['label' => 'Комнаты', 'url' => ['/room/default']],
+            // ['label' => 'Валюты', 'url' => ['category/index']],
             [
                 'label' => 'Настройки',
                 'items' => [
                      ['label' => 'Настройки корзины', 'url' => ['/admin/cart-setting/update', 'id'=>1]],
                 ],
             ],
-            
-            Yii::$app->user->isGuest ? (
-                ['label' => 'Login', 'url' => ['/site/login']]
-            ) : (
-                '<li>'
-                . Html::beginForm(['/site/logout'], 'post', ['class' => 'navbar-form'])
-                . Html::submitButton(
-                    'Logout (' . Yii::$app->user->identity->username . ')',
-                    ['class' => 'btn btn-link']
-                )
-                . Html::endForm()
-                . '</li>'
-            )
+
+            Yii::$app->user->isGuest ?
+                ['label' => 'Login', 'url' => ['/site/login']] :
+                [
+                    'label' => 'Logout (' . Yii::$app->user->identity->username . ')',
+                    'url' => ['/site/logout'],
+                    'linkOptions' => ['data-method' => 'post']
+                ],
         ],
     ]);
     NavBar::end();

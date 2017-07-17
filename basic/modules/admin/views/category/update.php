@@ -7,7 +7,7 @@ use yii\helpers\Html;
  * @var app\modules\admin\models\Category $model
  */
 
-$this->title = 'Обновление: ' . $model->title;
+$this->title = 'Обновить категорию: ' . $model->title;
 $this->params['breadcrumbs'][] = ['label' => 'Категории', 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->title, 'url' => ['view', 'id' => $model->id]];
 $this->params['breadcrumbs'][] = 'Обновить';

@@ -1,10 +1,9 @@
 <?php
 
 use yii\helpers\Html;
-use yii\helpers\ArrayHelper;
 use yii\grid\GridView;
-use app\modules\admin\models\Vendor;
 use app\modules\admin\models\Category;
+use yii\helpers\ArrayHelper;
 
 /**
  * @var yii\web\View $this
@@ -14,6 +13,15 @@ use app\modules\admin\models\Category;
 
 $this->title = 'Товары';
 $this->params['breadcrumbs'][] = $this->title;
+$this->registerJs('
+                            $(".available-checkbox").click(function(){
+                                var id = $(this).attr("id");
+                                var available = $(this).is(":checked");
+                                $.get("/admin/product/updateavailable",{"id":id,"available":available}).done(function(data){
+                                    console.log(data);
+                                });
+                            });
+                        ');
 ?>
 <div class="product-index">
 
@@ -24,44 +32,81 @@ $this->params['breadcrumbs'][] = $this->title;
     <p>
         <?= Html::a('Создать товар', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
-
-    <?= GridView::widget([
+<div class="row">
+    <div class="col-md-3">
+        <?//= Yii::$app->TreeViewAdmin->run();?>
+    </div>
+    <div class="col-md-9">
+        <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
-           // ['class' => 'yii\grid\SerialColumn'],
-
-            //'id',
-            'title',
             [
-                'attribute' => 'category_id',
                 'format' => 'raw',
                 'value' => function($data){
-                    return $data->category_id == 0 ? 'Без категории' : $data->category->title;
-                     
-                },
-                'filter' => Html::activeDropDownList($searchModel, 'category_id', ArrayHelper::map(Category::find()->asArray()->all(), 'id', 'title'),['class'=>'form-control','prompt' => 'Категория']),
-
+                    return Html::img($data->mainImage, ['style' => 'width:100px']);
+                }
             ],
             [
-                'attribute' => 'vendor_id',
+                'attribute' => 'title',
                 'format' => 'raw',
+                'headerOptions' => ['style' => 'width:300px'],
                 'value' => function($data){
-                    return $data->vendor_id == 0 ? 'Производитель не выбран' : $data->vendor->title;
-                },
-                'filter' => Html::activeDropDownList($searchModel, 'vendor_id', ArrayHelper::map(Vendor::find()->asArray()->all(), 'id', 'title'),['class'=>'form-control','prompt' => 'Производитель']),
+                    return Html::a($data->title,['update','id' => $data->id]);
+                }
 
             ],
-            'skuVendor',
-            // 'sku',
-            // 'photo',
-            // 'description:ntext',
-            // 'priceVendor',
+            
+            // [
+
+            //     'attribute' => 'category_id',
+            //     'headerOptions' => ['style' => 'width:200px'],
+            //     'format' => 'raw',
+            //     'value' => function($data){
+            //         return $data->category->title;
+            //     },
+            //     'filter' => Html::activeDropDownList($searchModel, 'category_id', ArrayHelper::map(Category::find()->asArray()->all(), 'id', 'title'),['class'=>'form-control','prompt' => 'Категория']),
+            // ],
+            // [
+            // 'label' => 'Информация о товаре',
+            // 'format' => 'raw',
+            // 'value' => function($data){
+            //         return "Артикул ". $data->sku."<br>".
+            //                 "Производитель ". $data->vendor."<br>".
+            //                 "Количество ". $data->quantity."<br>".
+            //                 "Цена ". $data->price."<br>".
+            //                 "Валюта ". $data->curency->title."<br>";
+
+            //     }
+            // ],
+            'sku',
+            'vendor',
+            'quantity',
             // 'price',
-            // 'available',
+            [
+                'attribute' => 'price',
+                'format' => 'raw',
+                'value' => function($data){
+                    return $data->price." ".$data->curency->title;
+                }
+            ],
+            // 'description',
+            'sale',
+            'way',
+            'active',
+            [
+                'attribute' => 'available',
+                'format' => 'raw',
+                'value' => function($data){
+                    return Html::activeCheckbox($data, 'available', ['label' => 'На складе', 'class' => 'available-checkbox','id'=> $data->id]);
+                    
+                } 
+            ],
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
+    </div>
+</div>
 
 </div>
