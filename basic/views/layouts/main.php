@@ -18,7 +18,7 @@ AppAsset::register($this);
 	<meta name="google-site-verification" content="i2UHaZtzSSdIqoNxTXjL1B_DlBO4dOSJ2Yilnu2g5As" />
 
     <meta charset="<?= Yii::$app->charset ?>">
-    <!-- <meta name="viewport" content="width=1200px, initial-scale=1"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
 

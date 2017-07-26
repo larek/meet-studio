@@ -1,7 +1,5 @@
 <?
 $this->title = 'Прикрованая тубма';
-$this->registerJsFile('/bower_components/fotorama/fotorama.js',['depends' => [\yii\web\JqueryAsset::className()]]);
-$this->registerCssFile('/bower_components/fotorama/fotorama.css');
 ?>
 <div class="row">
 	<div class="col-md-12">

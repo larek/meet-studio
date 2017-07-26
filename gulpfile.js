@@ -38,7 +38,6 @@ gulp.task('minify-css', () => {
 
 gulp.task('concat-css', () => {
   return gulp.src([
-      // 'bower_components/fotorama/fotorama.css',
       'bower_components/bootstrap/dist/css/bootstrap.min.css',
       'public/css/site.css'
     ])
