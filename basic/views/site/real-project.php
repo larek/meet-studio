@@ -1,8 +1,5 @@
 <?
 $this->title = 'Реализованные проекты';
-$this->registerJsFile('/bower_components/fotorama/fotorama.js',['depends' => [\yii\web\JqueryAsset::className()]]);
-$this->registerJsFile('/js/fotorama-fullscreen.js',['depends' => [\yii\web\JqueryAsset::className()]]);
-$this->registerCssFile('/bower_components/fotorama/fotorama.css');
 $this->registerCssFile('/bower_components/font-awesome/css/font-awesome.min.css');
 ?>
 <h1><?= $this->title;?></h1>
