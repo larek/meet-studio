@@ -10,15 +10,15 @@ $this->title = 'Натуральная кожа JOLLY';
 <div class="row">
 	<div class="col-md-6">
 		<div class="fotorama" data-width='100%' data-nav-position='bottom' data-nav='thumbs' data-allowfullscreen='true'>
-			<img src="/images/decor/2/7/1.jpg" alt="">
-			<img src="/images/decor/2/7/2.jpg" alt="">
-			<img src="/images/decor/2/7/3.jpg" alt="">
-			<img src="/images/decor/2/7/4.jpg" alt="">
-			<img src="/images/decor/2/7/5.jpg" alt="">
-			<img src="/images/decor/2/7/6.jpg" alt="">
-			<img src="/images/decor/2/7/7.jpg" alt="">
-			<img src="/images/decor/2/7/8.jpg" alt="">
-			<img src="/images/decor/2/7/9.jpg" alt="">
+			<img src="/images/decor/2/7/Borneo.jpg" data-caption="Borneo" />
+			<img src="/images/decor/2/7/Desert.jpg" data-caption="Desert" />
+			<img src="/images/decor/2/7/Gobi.jpg" data-caption="Gobi" />
+			<img src="/images/decor/2/7/Ice.jpg" data-caption="Ice" />
+			<img src="/images/decor/2/7/Patagonia.jpg" data-caption="Patagonia" />
+			<img src="/images/decor/2/7/Sahara.jpg" data-caption="Sahara" />
+			<img src="/images/decor/2/7/Salar.jpg" data-caption="Salar" />
+			<img src="/images/decor/2/7/Thar.jpg" data-caption="Thar" />
+			<img src="/images/decor/2/7/White.jpg" data-caption="White" />
 		</div>
 	</div>
 	<div class="col-md-6">

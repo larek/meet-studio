@@ -10,11 +10,11 @@ $this->title = 'Натуральная кожа LOFT';
 <div class="row">
 	<div class="col-md-6">
 		<div class="fotorama" data-width='100%' data-nav-position='bottom' data-nav='thumbs' data-allowfullscreen='true'>
-			<img src="/images/decor/2/8/1.jpg" alt="">
-			<img src="/images/decor/2/8/2.jpg" alt="">
-			<img src="/images/decor/2/8/3.jpg" alt="">
-			<img src="/images/decor/2/8/4.jpg" alt="">
-			<img src="/images/decor/2/8/5.jpg" alt="">
+			<img src="/images/decor/2/8/Basalto.jpg" data-caption="Basalto" />
+			<img src="/images/decor/2/8/Grafite.jpg" data-caption="Grafite" />
+			<img src="/images/decor/2/8/Onice.jpg" data-caption="Onice" />
+			<img src="/images/decor/2/8/Quarzo.jpg" data-caption="Quarzo" />
+			<img src="/images/decor/2/8/Zaffiro.jpg" data-caption="Zaffiro" />
 		</div>
 	</div>
 	<div class="col-md-6">

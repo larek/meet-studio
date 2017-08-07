@@ -10,15 +10,17 @@ $this->title = 'Кожа коллекции OLD';
 	<div class="col-md-6">
 		<div class="fotorama" data-width='100%' data-nav-position='bottom' data-nav='thumbs' data-allowfullscreen='true'>
 
-			<img src="/images/decor/2/9/1.jpg" alt="">
-			<img src="/images/decor/2/9/2.jpg" alt="">
-			<img src="/images/decor/2/9/3.jpg" alt="">
-			<img src="/images/decor/2/9/4.jpg" alt="">
-			<img src="/images/decor/2/9/5.jpg" alt="">
-			<img src="/images/decor/2/9/6.jpg" alt="">
-			<img src="/images/decor/2/9/7.jpg" alt="">
-			<img src="/images/decor/2/9/8.jpg" alt="">
-			<img src="/images/decor/2/9/9.jpg" alt="">
+
+			<img src="/images/decor/2/9/Armagnac.jpg" data-caption="Armagnac" />
+			<img src="/images/decor/2/9/Beige.jpg" data-caption="Beige" />
+			<img src="/images/decor/2/9/Bordo.jpg" data-caption="Bordo" />
+			<img src="/images/decor/2/9/Camel.jpg" data-caption="Camel" />
+			<img src="/images/decor/2/9/Cognac.jpg" data-caption="Cognac" />
+			<img src="/images/decor/2/9/Cuoio.jpg" data-caption="Cuoio" />
+			<img src="/images/decor/2/9/Fargo.jpg" data-caption="Fargo" />
+			<img src="/images/decor/2/9/Grey.jpg" data-caption="Grey" />
+			<img src="/images/decor/2/9/Tobacco.jpg" data-caption="Tobacco" />
+
 			<img src="/images/decor/2/7.jpg" alt="">
 			<img src="/images/decor/2/8.jpg" alt="">
 			<img src="/images/decor/2/9.jpg" alt="">
