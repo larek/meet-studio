@@ -10,31 +10,31 @@ $this->title = 'Натуральная кожа STELLA CLEAN';
 <div class="row">
 	<div class="col-md-6">
 		<div class="fotorama" data-width='100%' data-nav-position='bottom' data-nav='thumbs' data-allowfullscreen='true'>
-			<img src="/images/decor/2/3/1.jpg" alt="">
-			<img src="/images/decor/2/3/2.jpg" alt="">
-			<img src="/images/decor/2/3/3.jpg" alt="">
-			<img src="/images/decor/2/3/4.jpg" alt="">
-			<img src="/images/decor/2/3/5.jpg" alt="">
-			<img src="/images/decor/2/3/6.jpg" alt="">
-			<img src="/images/decor/2/3/7.jpg" alt="">
-			<img src="/images/decor/2/3/8.jpg" alt="">
-			<img src="/images/decor/2/3/9.jpg" alt="">
-			<img src="/images/decor/2/3/10.jpg" alt="">
-			<img src="/images/decor/2/3/11.jpg" alt="">
-			<img src="/images/decor/2/3/12.jpg" alt="">
-			<img src="/images/decor/2/3/13.jpg" alt="">
-			<img src="/images/decor/2/3/14.jpg" alt="">
-			<img src="/images/decor/2/3/15.jpg" alt="">
-			<img src="/images/decor/2/3/16.jpg" alt="">
-			<img src="/images/decor/2/3/17.jpg" alt="">
-			<img src="/images/decor/2/3/18.jpg" alt="">
-			<img src="/images/decor/2/3/19.jpg" alt="">
-			<img src="/images/decor/2/3/20.jpg" alt="">
-			<img src="/images/decor/2/3/21.jpg" alt="">
-			<img src="/images/decor/2/3/22.jpg" alt="">
-			<img src="/images/decor/2/3/23.jpg" alt="">
-			<img src="/images/decor/2/3/24.jpg" alt="">
-			<img src="/images/decor/2/3/25.jpg" alt="">
+		<img src="/images/decor/2/3/Black.jpg" data-caption="Black" />
+		<img src="/images/decor/2/3/Bordo.jpg" data-caption="Bordo" />
+		<img src="/images/decor/2/3/Brown.jpg" data-caption="Brown" />
+		<img src="/images/decor/2/3/Canvans.jpg" data-caption="Canvans" />
+		<img src="/images/decor/2/3/Chocco.jpg" data-caption="Chocco" />
+		<img src="/images/decor/2/3/Creame.jpg" data-caption="Creame" />
+		<img src="/images/decor/2/3/Dark Blue.jpg" data-caption="Dark Blue" />
+		<img src="/images/decor/2/3/Dark Brown.jpg" data-caption="Dark Brown" />
+		<img src="/images/decor/2/3/Forest.jpg" data-caption="Forest" />
+		<img src="/images/decor/2/3/Gold.jpg" data-caption="Gold" />
+		<img src="/images/decor/2/3/Green.jpg" data-caption="Green" />
+		<img src="/images/decor/2/3/Grey.jpg" data-caption="Grey" />
+		<img src="/images/decor/2/3/Mauri.jpg" data-caption="Mauri" />
+		<img src="/images/decor/2/3/Milk.jpg" data-caption="Milk" />
+		<img src="/images/decor/2/3/Moka.jpg" data-caption="Moka" />
+		<img src="/images/decor/2/3/Moro.jpg" data-caption="Moro" />
+		<img src="/images/decor/2/3/Neve.jpg" data-caption="Neve" />
+		<img src="/images/decor/2/3/Nut.jpg" data-caption="Nut" />
+		<img src="/images/decor/2/3/Orange.jpg" data-caption="Orange" />
+		<img src="/images/decor/2/3/Red.jpg" data-caption="Red" />
+		<img src="/images/decor/2/3/Rose.jpg" data-caption="Rose" />
+		<img src="/images/decor/2/3/Salar.jpg" data-caption="Salar" />
+		<img src="/images/decor/2/3/Snow.jpg" data-caption="Snow" />
+		<img src="/images/decor/2/3/Vanile.jpg" data-caption="Vanile" />
+		<img src="/images/decor/2/3/White.jpg" data-caption="White" />
 		</div>
 	</div>
 	<div class="col-md-6">
