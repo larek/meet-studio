@@ -14,26 +14,6 @@ $config = [
         ]
     ],
     'components' => [
-        'assetManager' => [
-            'class' => 'yii\web\AssetManager',
-            'bundles' => [
-                        'yii\web\JqueryAsset' => [
-                            'js' => [
-                                'jquery.min.js'
-                            ]
-                        ],
-                        'yii\bootstrap\BootstrapAsset' => [
-                            'css' => [
-                                'css/bootstrap.min.css',
-                            ]
-                        ],
-                        'yii\bootstrap\BootstrapPluginAsset' => [
-                            'js' => [
-                                'js/bootstrap.min.js',
-                            ]
-                        ]
-            ],
-        ],
         'str2url' => [
             'class' => 'app\components\str2url',
         ],
