@@ -17,80 +17,50 @@ $this->registerJs('
 
 ?>
 	
-
-<div class="fotorama">
-
+<div class="row">
+	<div class="col-md-12">
+		<div class="fotorama"></div>		
+	</div>
 </div>
 
-<div class="baner">
-	<h2>Беспрецедентная акция!</h2> 
-	<h3>Дизайн проект "4 звезды" за 650 руб</h3>
-	<a href='/service/4' class="btn-black">Подробнее</a>
-</div>
 
-	<div id="row" class="home_mr-top">
-		<div class="second-slide align-left mr-right-2">
-			<div class="flexslider">
-				<ul class="slides">
-					<li class="box-hover">
-						<a href="/decor/2">
-				    		<img src="/images/meet-finish-20170701.jpg" />
-				    	</a>
-						<div class="hover-homepage background-color-hover" style='margin-bottom:20px'>
-							<span class="name">
-								<a href='/decor/2'>
-									НАШИ ФИНИШИ
-								</a>
-							</span>
-							
-						</div>
-					
-				    </li>
-					<l
-				</ul>
-			</div>
-		</div>
-		<div class="second-slide align-right">
-			<div class="flexslider">
-				<ul class="slides">
-					<li class="box-hover">
-						<a href="/decor/1">
-							<img src="/images/meet-stone-20170701.jpg" class="zindex_bottom"/>
-						</a>
-						<div class="hover-homepage background-color-hover" style='margin-bottom:20px'>
-							<span class="name">
-								<a href='/decor/1'>
-									Каменный шпон
-								</a>
-							</span>
-						</div>
-				    </li>
-
-								    
-				</ul>
-			</div>
+<div class="row">
+	<div class="col-md-12">
+		<div class="baner">
+			<h2>Беспрецедентная акция!</h2> 
+			<h3>Дизайн проект "4 звезды" за 650 руб</h3>
+			<a href='/service/4' class="btn-black">Подробнее</a>
 		</div>
 	</div>
-	<div id="middle-info">
-		<div class="middle-info-box">
-			<a href="/contacts">КОНТАКТЫ</a>
-		</div>
-		<div class="verticalLine"></div>
-		<div class="middle-info-box">
-			<a href="/projects/index">ИНТЕРЬЕР</a>
-		</div>
-		<div class="verticalLine"></div>
-		<div class="middle-info-box">
-			<a href="/furniture">МЕБЕЛЬ</a>
-		</div>
-		<div class="verticalLine"></div>
-		<div class="middle-info-box">
-			<a href="/decor" target="_blank">ДЕКОР</a>
-		</div>
-		<div class="clear"></div>
-	</div>
-
 </div>
 
-	<div class="clear"></div>
+<div class="row">
+	<div class="col-md-6">
+		<img src="/images/meet-stone-20170701.jpg"" class='img-fluid' alt="">
+		<div class="homepage-banner-link">
+			<a href="/decor/1" class='white' >КАМЕННЫЙ ШПОН</a>
+		</div>
+	</div>
+	<div class="col-md-6">
+		<img src="/images/meet-finish-20170701.jpg" class='img-fluid' alt="">
+		<div class="homepage-banner-link">
+			<a href="/decor/2" class='white' >НАШИ ФИНИШИ</a>
+		</div>
+	</div>
+</div>
 
+<br><br>
+<div class="row">
+	<div class="col-md-3 text-center">
+		<a href="/contacts" class="btn btn-dark">КОНТАКТЫ</a>
+	</div>
+	<div class="col-md-3 text-center">
+		<a href="/projects/index" class="btn btn-dark">ИНТЕРЬЕР</a>
+	</div>
+	<div class="col-md-3 text-center">
+		<a href="/furniture" class="btn btn-dark">МЕБЕЛЬ</a>
+	</div>
+	<div class="col-md-3 text-center">
+		<a href="/decor" class="btn btn-dark">ДЕКОР</a>
+	</div>
+</div>

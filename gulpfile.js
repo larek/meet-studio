@@ -33,19 +33,24 @@ gulp.task('minify-css', () => {
       'src/css/*.css'
     ])
     .pipe(cleanCSS({ compatibility: 'ie8' }))
-    .pipe(gulp.dest('public/css/'));
+    .pipe(gulp.dest('./public/css/'));
 });
 
 gulp.task('concat-css', () => {
   return gulp.src([
-      'bower_components/bootstrap/dist/css/bootstrap.min.css',
-      'public/css/site.css'
+      // 'bower_components/bootstrap/dist/css/bootstrap.min.css',
+      // 'public/css/site.css',
+      './node_modules/bootstrap/dist/css/bootstrap.min.css',
+      './src/css/custom.css'
     ])
     .pipe(concat('all.min.css'))
-    .pipe(gulp.dest('public/css'));
+    .pipe(gulp.dest('./public/css'));
 });
 
+gulp.watch('./src/css/custom.css', ['concat-css'])
+
 gulp.task('css', ['minify-css', 'concat-css']);
+
 
 gulp.task('lint', () => {
   return gulp.src('src/js/*.js')

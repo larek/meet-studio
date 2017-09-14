@@ -19,13 +19,17 @@ class AppAsset extends AssetBundle
     public $baseUrl = '@web';
     public $css = [
         'public/css/all.min.css?v=1.1.8',
-        '/bower_components/fotorama/fotorama.css'
+        '/bower_components/fotorama/fotorama.css',
     ];
     public $js = [
-        'public/js/all-min.js?v=1.0.4',
+        'http://getbootstrap.com/assets/js/vendor/popper.min.js',
+        '/node_modules/bootstrap/dist/js/bootstrap.min.js',
+        '/node_modules/fotorama/fotorama.js'
+
+        // 'public/js/all-min.js?v=1.0.4',
     ];
     public $depends = [
-        // 'yii\web\YiiAsset',
+        'yii\web\YiiAsset',
         // 'yii\bootstrap\BootstrapPluginAsset',
     ];
 }

@@ -29,137 +29,63 @@ AppAsset::register($this);
 
 <?php $this->beginBody() ?>
 
-
-<div class="header" style="margin-top: 10px !important;">
+<div class="container">
 	<div class="circle1"></div>
 	<div class="circle2"></div>
 	<div class="circle3"></div>
-	<div class="container-custom">
-		<div class="col-md-9">
-			<div class="logo">
-				<a href="/">
-					<img id="logo" src="/images/logo.png" alt="BRABBU logo">
-				</a>
-			</div>
-		</div>
-		<div class="col-md-3 text-center">
-			<span class='phoneHeader'>+7-831-284-40-24</span>
-			<br>
-			<span class='phoneHeader'>+7-905-192-12-34</span>
-			<br>
-			<!-- Button trigger modal -->
-				<span type="button" class="btn btn-default" data-toggle="modal" data-target="#callBack">
-				  Получить консультацию
-				</span>
-		</div>
-	</div>
-	
-    <div class="nav">
-    	<ul>
-           <li><a href="/" style="color:#DD9B28;">Главная</a></li>
-           <li><a href="/furniture">Мебель</a></li>
-           <li><a href="/decor">Декор</a></li>
-           <li><?= Html::a('Интерьер',['projects/index'],['class' => 'dropdown','id'=>'1']);?></li>
-           <li><a href="/service">Услуги</a></li>
-           <li><a href="/real-project">Реализованные проекты</a></li>
-           <li><a href="#">Новости</a></li>
-           <li><?= Html::a('Контакты',['site/contact'])?></li>
-           
-		</ul>
 
-		<div class="nav-dropdown">
-		</div>
+    <div class="masthead">
+    	<div class="container">
+    		<div class="row">
+				<div class="col-md-9">
+					<div class="logo">
+						<a href="/">
+							<img id="logo" src="/images/logo.png" alt="BRABBU logo">
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 text-center">
+					<span class='phoneHeader'>+7-831-284-40-24</span>
+					<br>
+					<span class='phoneHeader'>+7-905-192-12-34</span>
+					<br>
+					<!-- Button trigger modal -->
+						<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#callBack">
+						  Получить консультацию
+						</button>
+				</div>
+				</div>
+			</div>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse" id="navbarsExample08" style="">
+        <ul class="navbar-nav">
+        		<li class='nav-item'><a href="/" class='nav-link' style="color:#DD9B28;">Главная</a></li>
+           <li class='nav-item'><a href="/furniture" class='nav-link' >Мебель</a></li>
+           <li class='nav-item'><a href="/decor" class='nav-link' >Декор</a></li>
+           <li class='nav-item'><?= Html::a('Интерьер',['projects/index'],['class' => 'nav-link','id'=>'1']);?></li>
+           <li class='nav-item'><a href="/service" class='nav-link' >Услуги</a></li>
+           <li class='nav-item'><a href="/real-project" class='nav-link' >Реализованные проекты</a></li>
+           <li class='nav-item'><a href="#" class='nav-link' >Новости</a></li>
+           <li class='nav-item'><?= Html::a('Контакты',['site/contact'],['class' => 'nav-link'])?></li>
+        </ul>
+      </div>
+    </nav>
     </div>
 
-	<div class="clear"></div>
-</div>
+			<?= $content?>
+</div> <!-- /container -->
 
-<div class="container-custom">
-<?= $content?>
-</div>
-<div class="footer">
-	<div class="footer-content">
-		<div class="footer-inner-link" style='display:none'>
-			<div class="footer-inner-link-title">
-				<p>Полезная информация</p>
-			</div>
-			<div class="footer-inner-link-text">
-		        <div class="column1">
-		            <h3>Заголовок</h3>
-		            <ul>
-		                <li><a href="#">Ссылка</a></li>
-		                <li><a href="#">Ссылка</a></li>
-		                <li><a href="#">Ссылка</a></li>
-		                <li><a href="#">Ссылка</a></li>
-		               
-		            </ul>
-		            
-		        </div>
-		        <div class="column2">
-		            <h3>Заголовок</h3>
-		            <ul>
-		                <li><a href="#">Ссылка</a></li>
-		                <li><a href="#">Ссылка</a></li>
-		                <li><a href="#">Ссылка</a></li>
-		                <li><a href="#">Ссылка</a></li>
-		               
-		            </ul>
-		        </div>
-		        <div class="column3">
-		            <h3>Заголовок</h3>
-		            <ul>
-		                <li><a href="#">Ссылка</a></li>
-		                <li><a href="#">Ссылка</a></li>
-		                <li><a href="#">Ссылка</a></li>
-		                <li><a href="#">Ссылка</a></li>
-		               
-		            </ul>
-		        </div>
+<br>
 
-		        <div class="column3">
-		            <h3>Заголовок</h3>
-		            <ul>
-		                <li><a href="#">Ссылка</a></li>
-		                <li><a href="#">Ссылка</a></li>
-		                <li><a href="#">Ссылка</a></li>
-		                <li><a href="#">Ссылка</a></li>
-		               
-		            </ul>
-		        </div>
-
-		        <div class="column3">
-		            <h3>Заголовок</h3>
-		            <ul>
-		                <li><a href="#">Ссылка</a></li>
-		                <li><a href="#">Ссылка</a></li>
-		                <li><a href="#">Ссылка</a></li>
-		                <li><a href="#">Ссылка</a></li>
-		               
-		            </ul>
-		        </div>
-
-		        <div class="column3">
-		            <h3>Заголовок</h3>
-		            <ul>
-		                <li><a href="#">Ссылка</a></li>
-		                <li><a href="#">Ссылка</a></li>
-		                <li><a href="#">Ссылка</a></li>
-		                <li><a href="#">Ссылка</a></li>
-		               
-		            </ul>
-		        </div>
-			</div>
-		</div>
-        
-        
-        <div class="clear"></div>
-	</div>
-</div>
-<div class="footer-bottom">
-	<div class="footer-content">
-		<p> &copy; Meet | Все права защищены. </p>
-	</div>
-</div>
+<footer class="footer">
+  <div class="container">
+    <p class='white'> &copy; Meet Studio | Все права защищены. </p>
+  </div>
+</footer>
 
 <!-- BEGIN JIVOSITE CODE {literal} -->
 <script type='text/javascript'>
@@ -239,7 +165,6 @@ var s = document.createElement('script'); s.type = 'text/javascript'; s.async = 
     </div>
   </div>
 </div>
-
 <?php $this->endBody() ?>
 </body>
 </html>
