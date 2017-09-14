@@ -161,6 +161,18 @@ span.btn-fotorama-fullscreen:hover {
   right: -100px;
 }
 
+.clear-bg{
+  background: none;
+}
+
+.grid-item{
+  margin: 10px 0px;
+}
+
+.masthead {
+    margin-top: 10px;
+}
+
 @media (min-width: 1200px){
   .container {
     max-width: 960px !important;

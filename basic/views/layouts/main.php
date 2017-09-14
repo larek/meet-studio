@@ -35,7 +35,6 @@ AppAsset::register($this);
 	<div class="circle3"></div>
 
     <div class="masthead">
-    	<div class="container">
     		<div class="row">
 				<div class="col-md-9">
 					<div class="logo">
@@ -44,7 +43,7 @@ AppAsset::register($this);
 						</a>
 					</div>
 				</div>
-				<div class="col-md-3 text-center">
+				<div class="col-md-3 text-right">
 					<span class='phoneHeader'>+7-831-284-40-24</span>
 					<br>
 					<span class='phoneHeader'>+7-905-192-12-34</span>
@@ -55,7 +54,6 @@ AppAsset::register($this);
 						</button>
 				</div>
 				</div>
-			</div>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

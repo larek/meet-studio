@@ -29,7 +29,7 @@ $this->registerJs('
 		<div class="baner">
 			<h2>Беспрецедентная акция!</h2> 
 			<h3>Дизайн проект "4 звезды" за 650 руб</h3>
-			<a href='/service/4' class="btn-black">Подробнее</a>
+			<a href='/service/4' class="btn btn-dark">Подробнее</a>
 		</div>
 	</div>
 </div>
@@ -51,16 +51,16 @@ $this->registerJs('
 
 <br><br>
 <div class="row">
-	<div class="col-md-3 text-center">
-		<a href="/contacts" class="btn btn-dark">КОНТАКТЫ</a>
+	<div class="col-md-3 col-sm-6 text-center grid-item">
+		<a href="/contacts" class="btn btn-dark btn-block">КОНТАКТЫ</a>
 	</div>
-	<div class="col-md-3 text-center">
-		<a href="/projects/index" class="btn btn-dark">ИНТЕРЬЕР</a>
+	<div class="col-md-3 col-sm-6 text-center grid-item">
+		<a href="/projects/index" class="btn btn-dark btn-block">ИНТЕРЬЕР</a>
 	</div>
-	<div class="col-md-3 text-center">
-		<a href="/furniture" class="btn btn-dark">МЕБЕЛЬ</a>
+	<div class="col-md-3 col-sm-6 text-center grid-item">
+		<a href="/furniture" class="btn btn-dark btn-block">МЕБЕЛЬ</a>
 	</div>
-	<div class="col-md-3 text-center">
-		<a href="/decor" class="btn btn-dark">ДЕКОР</a>
+	<div class="col-md-3 col-sm-6 text-center grid-item">
+		<a href="/decor" class="btn btn-dark btn-block">ДЕКОР</a>
 	</div>
 </div>
