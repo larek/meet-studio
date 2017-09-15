@@ -38,7 +38,7 @@ $this->title = 'Вешалка для одежды';
 			</tbody>
 		</table>
 		<br>
-		<img src="/images/furniture/4/furniture-4-schema.png" class='img-responsive' alt="">
+		<img src="/images/furniture/4/furniture-4-schema.png" class='img-fluid' alt="">
 	</div>
 
 </div>

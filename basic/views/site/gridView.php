@@ -17,7 +17,7 @@ $this->title = $title;
 
 <div class="row">
 	<? foreach($model as $item):?>
-		<div class="col-md-4 grid-item">
+		<div class="col-md-4 grid-item" onclick="window.location='<?= $item->link?>'">
 		<div class="card clear-bg">
 		  <img class="card-img-top" src="<?= $item->image?>" class='img-fluid' alt="Card image cap">
 		  <div class="card-body text-center">

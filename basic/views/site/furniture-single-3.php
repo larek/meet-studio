@@ -35,7 +35,7 @@ $this->title = 'Банкетка';
 			</tbody>
 		</table>
 		<br>
-		<img src="/images/furniture/3/furniture-3-schema.png" class='img-responsive' alt="">
+		<img src="/images/furniture/3/furniture-3-schema.png" class='img-fluid' alt="">
 	</div>
 
 </div>

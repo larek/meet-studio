@@ -31,7 +31,7 @@ $this->title = 'Прикроватная тумба';
 			</tbody>
 		</table>
 		<br>
-		<img src="/images/furniture/1/furniture-1-schema.png" class='img-responsive' alt="">
+		<img src="/images/furniture/1/furniture-1-schema.png" class='img-fluid' alt="">
 	</div>
 
 	<div class="col-md-12">
