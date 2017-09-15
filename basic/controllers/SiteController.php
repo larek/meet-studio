@@ -108,8 +108,15 @@ class SiteController extends Controller
     }
 
     public function actionFurnitureSingle($id){
-        return $this->render('furniture-single-'.$id);
+        $model = new Furniture;
+        $data = $model->getData();
+        $product = $data[$id];
+        return $this->render('detailView',[
+            'product' => $product
+        ]);
     }
+
+
 
     public function actionService(){
         return $this->render('service');
