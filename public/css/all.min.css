@@ -7,10 +7,10 @@
 /*# sourceMappingURL=bootstrap.min.css.map */
 body {
     background: #d3d3d3;
-    background: linear-gradient(#d3d3d3,#a3a3a3);
+    background: linear-gradient(#d3d3d3, #a3a3a3);
     width: 100%;
     height: auto;
-    font-family: 'PT Sans',sans-serif;
+    font-family: 'PT Sans', sans-serif;
     letter-spacing: .8pt;
     color: #000;
     line-height: 20px;
@@ -18,65 +18,65 @@ body {
 }
 
 .baner {
-  padding: 20px;
-  background: #e8e5d6;
-  margin-bottom: 21px;
-  text-align: center;
+    padding: 20px;
+    background: #e8e5d6;
+    margin-bottom: 21px;
+    text-align: center;
 }
 
 a.btn-black {
-  background: black;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 27px;
-  text-transform: uppercase;
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 27px;
+    text-transform: uppercase;
 }
 
 a.btn-light {
-  background: #e8e5d6;
-  color: #000;
-  padding: 10px 20px;
-  border-radius: 27px;
-  text-transform: uppercase;
+    background: #e8e5d6;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 27px;
+    text-transform: uppercase;
 }
 
 .slide-caption {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 0px 30px 30px 30px;
-  bottom: 0px;
-  position: absolute;
-  width: 100%;
-  color: white;
-  text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0px 30px 30px 30px;
+    bottom: 0px;
+    position: absolute;
+    width: 100%;
+    color: white;
+    text-align: center;
 }
 
 span.btn-fotorama-fullscreen {
-  display: block;
-  padding: 6px 0px;
-  border: 1px solid #272626;
-  margin: 10px auto;
-  text-align: center;
-  cursor: pointer;
-  width: 300px;
-  border-radius: 31px;
+    display: block;
+    padding: 6px 0px;
+    border: 1px solid #272626;
+    margin: 10px auto;
+    text-align: center;
+    cursor: pointer;
+    width: 300px;
+    border-radius: 31px;
 }
 
 span.btn-fotorama-fullscreen:hover {
-  background: #272626;
-  color: white;
+    background: #272626;
+    color: white;
 }
 
 .phoneHeader {
-  font-size: 20px;
-  padding: 5px 0px;
-  display: inline-block;
+    font-size: 20px;
+    padding: 5px 0px;
+    display: inline-block;
 }
 
 .modal-sub-header {
-  padding: 15px;
-  background: #4c4c4c;
-  color: white;
-  font-size: 12px;
+    padding: 15px;
+    background: #4c4c4c;
+    color: white;
+    font-size: 12px;
 }
 
 .service-price {
@@ -84,8 +84,8 @@ span.btn-fotorama-fullscreen:hover {
     font-weight: bold;
 }
 
-.red-price{
-  color:#cc0000;
+.red-price {
+    color: #cc0000;
 }
 
 .homepage-banner-link {
@@ -97,32 +97,32 @@ span.btn-fotorama-fullscreen:hover {
     text-align: center;
 }
 
-.white{
-  color: white;
+.white {
+    color: white;
 }
 
 #middle-info {
-  width:100%;
-  float:left;
-  height:65px;
+    width: 100%;
+    float: left;
+    height: 65px;
 }
 
 .middle-info-box {
-  width:236px;
-  height:100%;
-  float:left;
-  text-align:center;
+    width: 236px;
+    height: 100%;
+    float: left;
+    text-align: center;
 }
 
 .middle-info-box a {
-  font-size:12px;
-  color:#696969;
-  display:block;
-  margin-top:20px;
+    font-size: 12px;
+    color: #696969;
+    display: block;
+    margin-top: 20px;
 }
 
 .middle-info-box a:hover {
-  color:#777;
+    color: #777;
 }
 
 .footer {
@@ -133,48 +133,50 @@ span.btn-fotorama-fullscreen:hover {
     background-color: #343a40;
 }
 
-.circle1 {
-  height: 80px;
-  width: 80px;
-  border-radius: 50%;
-  background: black;
-  position: absolute;
-  margin: -50px 612px;
+
+
+.clear-bg {
+    background: none;
 }
 
-.circle2 {
-  height: 90px;
-  width: 90px;
-  border-radius: 50%;
-  background: black;
-  position: absolute;
-  margin: 270px -125px;
-}
-
-.circle3 {
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  background: black;
-  position: fixed;
-  bottom: -100px;
-  right: -100px;
-}
-
-.clear-bg{
-  background: none;
-}
-
-.grid-item{
-  margin: 10px 0px;
+.grid-item {
+    margin: 10px 0px;
 }
 
 .masthead {
     margin-top: 10px;
 }
 
-@media (min-width: 1200px){
-  .container {
-    max-width: 960px !important;
-  }
+
+.circle2 {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background: black;
+    position: absolute;
+    margin: 270px -125px;
+}
+
+.circle3 {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: black;
+    position: fixed;
+    bottom: -100px;
+    right: -100px;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 960px !important;
+    }
+    .circle1 {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        background: black;
+        position: absolute;
+        margin: -50px 612px;
+    }
 }

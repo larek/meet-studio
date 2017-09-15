@@ -36,14 +36,14 @@ AppAsset::register($this);
 
     <div class="masthead">
     		<div class="row">
-				<div class="col-md-9">
+				<div class="col-md-6 d-none d-md-block">
 					<div class="logo">
 						<a href="/">
 							<img id="logo" src="/images/logo.png" alt="BRABBU logo">
 						</a>
 					</div>
 				</div>
-				<div class="col-md-3 text-right">
+				<div class="col-md-6 text-right d-none d-md-block">
 					<span class='phoneHeader'>+7-831-284-40-24</span>
 					<br>
 					<span class='phoneHeader'>+7-905-192-12-34</span>
