@@ -36,10 +36,18 @@ AppAsset::register($this);
 
     <div class="masthead">
     		<div class="row">
+        <div class="col-4 d-md-none d-lg-none">
+            <a href="/">
+              <img id="logo" src="/images/logo.png" class='img-fluid' />
+            </a>  
+        </div>
+        <div class="col-8 text-right d-md-none d-lg-none">
+          <span class="phoneHeader">+7-831-284-40-24</span><br /><span class="phoneHeader">+7-950-192-12-34</span>
+        </div>
 				<div class="col-md-6 d-none d-md-block">
 					<div class="logo">
 						<a href="/">
-							<img id="logo" src="/images/logo.png" alt="BRABBU logo">
+							<img id="logo" src="/images/logo.png" />
 						</a>
 					</div>
 				</div>
@@ -158,7 +166,7 @@ var s = document.createElement('script'); s.type = 'text/javascript'; s.async = 
 		<div class="noticeBlock"></div>
       </div>
       <div class="modal-footer">
-        <span class="btn btn-default btn-callBack">Отправить</span>
+        <span class="btn btn-dark btn-callBack">Отправить</span>
       </div>
     </div>
   </div>
