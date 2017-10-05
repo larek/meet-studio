@@ -12,6 +12,7 @@ use app\models\Images;
 use yii\imagine\Image;
 use app\models\Projects;
 use app\models\Furniture;
+use app\models\Decor;
 
 class SiteController extends Controller
 {
@@ -87,7 +88,12 @@ class SiteController extends Controller
     }
 
     public function actionDecor(){
-        return $this->render('decor');
+        $model = new Decor;
+
+        return $this->render('gridView',[
+            'title' => 'Декор',
+            'model' => $model->getData()
+        ]);
     }
 
     public function actionDecorFinish(){

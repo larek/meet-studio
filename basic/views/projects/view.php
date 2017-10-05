@@ -18,7 +18,7 @@ $this->title = $model->title;
 
 			<?
 				foreach($model->images as $img){
-				 echo Html::img("/uploads/1000px/".$img->img,['oncontextmenu' => 'return false']);
+				 echo Html::img("/uploads/1000px/".$img->img,['oncontextmenu' => 'return false', 'class' => 'img-fluid']);
 				 echo "<br><br>";
 				}
 			?>

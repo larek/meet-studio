@@ -9,31 +9,34 @@ use yii\widgets\ListView;
 
 $this->title = 'Услуги';
 ?>
-<h1>Услуги</h1>
-<section class="mainwrapper clearfix">
-    <div class="clear" style="margin-bottom:30px;"></div>
-<section id="projects">
-
-<div class="imageblock" onclick="window.location = '/service/5'">
-	<div class="singleimage">
-		<img width="300" height="200" oncontextmenu="return false;" src="/images/meet-studio-stars-5.png" class="attachment-gallery wp-post-image">
-	</div>
-	<div class="afterpicture">
-		<h4>Дизайн проект 5 звезд</h4>
-		<span class='service-price'>1450 р/м2</span>
+<div class="row">
+	<div class="col-md-12">
+		<h1>Услуги</h1>
 	</div>
 </div>
-<div class="imageblock" onclick="window.location = '/service/4'">
-	<div class="singleimage">
-		<img width="300" height="200" oncontextmenu="return false;" src="/images/meet-studio-stars-4.png" class="attachment-gallery wp-post-image">
+<div class="row">
+	<!-- Grid Item -->
+	<div class="col-md-4 grid-item" onclick="window.location='/service/5'">
+		<div class="card clear-bg">
+		  <img class="card-img-top" src="/images/meet-studio-stars-5.png" class='img-fluid' alt="Card image cap">
+		  <div class="card-body text-center">
+		    <h4 class="card-title">Дизайн проект 5 звезд</h4>
+		    <div class="service-price"><span class='service-price'>1450 р/м2</span></div>
+		    <a href="/service/5" class="btn btn-dark">Подробнее</a>
+		  </div>
+		</div>
 	</div>
-	<div class="afterpicture">
-		<h4>Дизайн проект 4 звезды</h4>
-		<div class='service-price'><span class='red-price'>650 р/м2</span> <del>1100 р/м2</del></div>
+	<!-- End Grid Item -->
+	<!-- Grid Item -->
+	<div class="col-md-4 grid-item" onclick="window.location='/service/4'">
+		<div class="card clear-bg">
+		  <img class="card-img-top" src="/images/meet-studio-stars-4.png" class='img-fluid' alt="Card image cap">
+		  <div class="card-body text-center">
+		    <h4 class="card-title">Дизайн проект 4 звезды</h4>
+		    <div class='service-price'><span class='red-price'>650 р/м2</span> <del>1100 р/м2</del></div>
+		    <a href="/service/4" class="btn btn-dark">Подробнее</a>
+		  </div>
+		</div>
 	</div>
+	<!-- End Grid Item -->
 </div>
-	
-
-			<div class="clear"></div>
-		</section>
-</section>

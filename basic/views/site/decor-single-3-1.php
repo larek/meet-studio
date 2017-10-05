@@ -24,6 +24,6 @@ $this->title = 'Ткань коллекции BARBADOS';
 		</div>
 	</div>
 	<div class="col-md-6">
-		<img src="/images/decor/3/BARBADOS/BARBADOS.jpg" class='img-responsive' alt="">
+		<img src="/images/decor/3/BARBADOS/BARBADOS.jpg" class='img-fluid' alt="">
 	</div>
 </div>

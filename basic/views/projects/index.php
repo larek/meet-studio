@@ -9,18 +9,16 @@ use yii\widgets\ListView;
 
 $this->title = 'Проекты';
 ?>
+<div class="row">
+	<div class="col-md-12">
+		<h1><?= $this->title?></h1>
+	</div>
+</div>
 
-<section class="mainwrapper clearfix">
-    <div class="clear" style="margin-bottom:30px;"></div>
-<section id="projects">
-
-<?= ListView::widget([
-    'dataProvider' => $dataProvider,
-    'itemView' => '_item',
-    'summary' => false,
-]);?>
-	
-
-			<div class="clear"></div>
-		</section>
-</section>
+	<?= ListView::widget([
+	    'dataProvider' => $dataProvider,
+	    'itemView' => '_item',
+	    'summary' => false,
+	    'options' => ['class' => 'row'],
+	    'itemOptions' => ['class' => 'col-md-4 grid-item']
+	]);?>

@@ -9,18 +9,19 @@ use yii\widgets\ListView;
 
 $this->title = 'Ткань';
 ?>
-<h1>Ткань</h1>
-<section class="mainwrapper clearfix">
-    <div class="clear" style="margin-bottom:30px;"></div>
-<section id="projects">
-
-<div class="imageblock" onclick="window.location = '/decor/3/1'">
-	<div class="singleimage">
-		<img width="300" height="200" oncontextmenu="return false;" src="/images/decor/3/BARBADOS/9-2274-010-article-ratio1.jpg" class="attachment-gallery wp-post-image">
+<div class="row">
+	<div class="col-md-12">
+		<h1>Ткань</h1>
 	</div>
-	<div class="afterpicture">Ткань коллекции BARBADOS</div>
 </div>
-
-			<div class="clear"></div>
-		</section>
-</section>
+<div class="row">
+	<div class="col-md-4 grid-item" onclick="window.location='/decor/3/1'">
+		<div class="card clear-bg">
+		  <img class="card-img-top" src="/images/decor/3/BARBADOS/9-2274-010-article-ratio1.jpg" class='img-fluid' alt="Card image cap">
+		  <div class="card-body text-center">
+		    <h4 class="card-title">Ткань коллекции BARBADOS</h4>
+		    <a href="/decor/3/1" class="btn btn-dark">Подробнее</a>
+		  </div>
+		</div>
+	</div>
+</div>
