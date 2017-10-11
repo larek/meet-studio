@@ -18,7 +18,7 @@ class AppAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        'public/css/all.min.css?v=1.1.8',
+        'public/css/all.min.css?v=1.1.9',
         '/bower_components/fotorama/fotorama.css',
     ];
     public $js = [
