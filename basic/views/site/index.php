@@ -24,15 +24,7 @@ $this->registerJs('
 </div>
 
 
-<div class="row">
-	<div class="col-md-12">
-		<div class="baner">
-			<h2>Беспрецедентная акция!</h2> 
-			<h3>Дизайн проект "4 звезды" за 650 руб</h3>
-			<a href='/service/4' class="btn btn-dark">Подробнее</a>
-		</div>
-	</div>
-</div>
+<br>
 
 <div class="row">
 	<div class="col-md-6">

@@ -21,7 +21,7 @@ $this->title = 'Услуги';
 		  <img class="card-img-top" src="/images/meet-studio-stars-5.png" class='img-fluid' alt="Card image cap">
 		  <div class="card-body text-center">
 		    <h4 class="card-title">Дизайн проект 5 звезд</h4>
-		    <div class="service-price"><span class='service-price'>1450 р/м2</span></div>
+		    <div class="service-price"><span class='service-price'>1600 р/м2</span></div>
 		    <a href="/service/5" class="btn btn-dark">Подробнее</a>
 		  </div>
 		</div>
@@ -33,7 +33,7 @@ $this->title = 'Услуги';
 		  <img class="card-img-top" src="/images/meet-studio-stars-4.png" class='img-fluid' alt="Card image cap">
 		  <div class="card-body text-center">
 		    <h4 class="card-title">Дизайн проект 4 звезды</h4>
-		    <div class='service-price'><span class='red-price'>650 р/м2</span> <del>1100 р/м2</del></div>
+		    <div class='service-price'><span class='service-price'>1200 р/м2</span></div>
 		    <a href="/service/4" class="btn btn-dark">Подробнее</a>
 		  </div>
 		</div>

@@ -16,7 +16,7 @@ $this->title = 'Дизайн проект 4 звезды. Дизайн инте�
 			<tbody>
 				<tr>
 					<td>Стоимость</td>
-					<td><div class="service-price"><span class="red-price">650 р/м2</span> <del>1100 р/м2</del></div></td>
+					<td><div class="service-price"><span class='service-price'>1200 р/м2</span></div></td>
 				</tr>
 				<tr>
 					<td>Срок выполнения</td>
