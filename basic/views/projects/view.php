@@ -8,21 +8,19 @@ use yii\widgets\DetailView;
 
 $this->title = $model->title;
 ?>
-<section class="mainwrapper clearfix">
-
-		<div id="singlepost" class="clearfix">
-
-			<h1><?= $model->title; ?></h1>
-
-		<div id="maincontent">
-
-			<?
-				foreach($model->images as $img){
-				 echo Html::img("/uploads/1000px/".$img->img,['oncontextmenu' => 'return false', 'class' => 'img-fluid']);
-				 echo "<br><br>";
-				}
-			?>
-            <?= $model->description;?>
-		</div>
-
-</section>
+<div class="row">
+  <div class="col-md-12 mt-3">
+    <h1><?= $model->title;?></h1>
+  </div>
+</div>
+<div class="row">
+  <?
+    foreach($model->images as $item){
+      echo "<div class='col-md-3 mt-3'>";
+      echo Html::beginTag('a', ['href' => '/uploads/1000px/'.$item->img, 'data-fancybox' => 'group']);
+      echo Html::img("/uploads/240x180/".$item->img, ['oncontextmenu' => 'return false', 'class' => 'img-fluid']);
+      echo Html::endTag('a');
+      echo "</div>";
+    }
+  ?>
+</div>
