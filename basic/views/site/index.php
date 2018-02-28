@@ -8,7 +8,6 @@ $this->registerJs('
 			ratio: 2/1,
 			autoplay: 2000,
 			data:[
-				{img: "/images/meet-slide-1-20170701.jpg"},
 				{img: "/images/meet-slide-2-20170701.jpg",fit:"cover",html:"<div class=\"slide-caption\"><h3>Мебель</h3><a href=\"#\" class=\"btn-light\">Подробнее</a></div>"},
 				{img: "/images/meet-slide-3-20170701.jpg",fit:"cover",html:"<div class=\"slide-caption\"><h3>Каменный шпон</h3><a href=\"/decor/1\" class=\"btn-light\">Подробнее</a></div>"}
 			],
