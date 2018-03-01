@@ -207,6 +207,7 @@ class SiteController extends Controller
         	    $img = $_SERVER['DOCUMENT_ROOT']."uploads/".$fileName;
                 Image::thumbnail($img, 100, 100, $mode)->save('uploads/100x100/'. $newFile, ['quality' => 100]);
                 Image::thumbnail($img, 240, 180, $mode)->save('uploads/240x180/'. $newFile, ['quality' => 100]);
+                //Image::thumbnail($img, 1000, null, $mode)->save('uploads/1000px/'. $newFile, ['quality' => 100]);
             	
             	$model = new Images();
             	$model->img = $newFile;
