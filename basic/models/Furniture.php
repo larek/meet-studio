@@ -111,6 +111,26 @@ class Furniture{
 						</table>
 						<br>
 						<img src="/images/furniture/4/furniture-4-schema.png" class="img-fluid" />'
+			],
+			'5' => (object)[
+				'id' => '5',
+				'title' => 'Шкаф',
+				'image' => '/images/furniture/5/1.jpg',
+				'link' => '/furniture/5',
+				'images' => [
+					'/images/furniture/5/1.jpg',
+					'/images/furniture/5/2.jpg',
+					'/images/furniture/5/3.jpg',
+					'/images/furniture/5/4.jpg',
+					'/images/furniture/5/5.jpg',
+					'/images/furniture/5/6.jpg',
+					'/images/furniture/5/7.jpg',
+					'/images/furniture/5/8.jpg',
+					'/images/furniture/5/9.jpg'
+				],
+				'description' => '
+						<br>
+						<img src="/images/furniture/5/furniture-5-schema.png" class="img-fluid" />'
 			]
 		];
 
