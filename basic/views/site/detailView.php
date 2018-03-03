@@ -3,7 +3,7 @@ use yii\helpers\Html;
 $this->title = $product->title;
 
 // Title row
-$html = Html::beginTag('div', ['class' => 'row']);
+$html = Html::beginTag('div', ['class' => 'row mt-3']);
 $html.= Html::beginTag('div', ['class' => 'col-md-12']);
 $html.= Html::tag('h1', $product->title);
 $html.= Html::endTag('div'); // end col-md-12

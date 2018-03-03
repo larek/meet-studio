@@ -115,7 +115,7 @@ class Furniture{
 			'5' => (object)[
 				'id' => '5',
 				'title' => 'Шкаф',
-				'image' => '/images/furniture/5/1.jpg',
+				'image' => '/images/furniture/5/1-thumb.jpg',
 				'link' => '/furniture/5',
 				'images' => [
 					'/images/furniture/5/1.jpg',
@@ -124,17 +124,35 @@ class Furniture{
 					'/images/furniture/5/4.jpg',
 					'/images/furniture/5/5.jpg',
 					'/images/furniture/5/6.jpg',
-					'/images/furniture/5/7.jpg',
+					'/images/furniture/5/7-1.jpg',
 					'/images/furniture/5/8.jpg',
 					'/images/furniture/5/9.jpg'
 				],
 				'description' => '
-						<br>
-						<img src="/images/furniture/5/furniture-5-schema.png" class="img-fluid" />'
-			]
-		];
+						<table class="table">
+							<tbody>
+								<tr>
+									<td>Размеры</td>
+                                                                        <td>L 125 cm / 49,21"<br/> D 39 cm  / 15,35"<br/> H 240 cm/ 94,5"</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                          <td>Описание изделия</td>
+                                                                          <td>
+Обувной шкаф выполнен из HDF фанерованный натуральным шпоном клена сикамора с инкрустацией латуни полированной в зеркало. Внутреннее наполнение выполнено из натурального шпона Кото жемчужного цвета.
+                                                                          </td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                          <td>Материал изделия</td>
+                                                                          <td>Клен сикамора, латунь полированная, кото</td>
+                                                                  </tr>
+                                                          </tbody>
+                                                  </table>
+                                                  <br>
+                                                  <img src="/images/furniture/5/furniture-5-schema.png" class="img-fluid" />'
+                          ]
+                  ];
 
-		return $data;
-	}
+                  return $data;
+          }
 
-}
+  }
