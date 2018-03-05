@@ -149,6 +149,18 @@ class Furniture{
                                                   </table>
                                                   <br>
                                                   <img src="/images/furniture/5/furniture-5-schema.png" class="img-fluid" />'
+                          ],
+			'6' => (object)[
+				'id' => '6',
+				'title' => 'Зеркало и консоль',
+				'image' => '/images/furniture/6/1-thumb.jpg',
+				'link' => '/furniture/6',
+				'images' => [
+					'/images/furniture/6/1.jpg',
+					'/images/furniture/6/2.jpg',
+					'/images/furniture/6/3.jpg',
+				],
+				'description' => ''
                           ]
                   ];
 
