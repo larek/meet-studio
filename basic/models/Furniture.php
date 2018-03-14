@@ -174,6 +174,18 @@ class Furniture{
                                   '/images/furniture/7/4.jpg',
                                 ],
                                 'description' => ''
+                              ],
+                              '8' => (object)[
+                                'id' => '8',
+                                'title' => 'Комод "Origami"',
+                                'image' => '/images/furniture/8/1-thumb.jpg',
+                                'link' => '/furniture/8',
+                                'images' => [
+                                  '/images/furniture/8/1.jpg',
+                                  '/images/furniture/8/2.jpg',
+                                  '/images/furniture/8/3.jpg',
+                                ],
+                                'description' => ''
                               ]
                   ];
 
