@@ -161,7 +161,20 @@ class Furniture{
 					'/images/furniture/6/3.jpg',
 				],
 				'description' => ''
-                          ]
+                              ],
+                              '7' => (object)[
+                                'id' => '7',
+                                'title' => 'Прикроватная тумбочка "Origami"',
+                                'image' => '/images/furniture/7/1-thumb.jpg',
+                                'link' => '/furniture/7',
+                                'images' => [
+                                  '/images/furniture/7/1.jpg',
+                                  '/images/furniture/7/2.jpg',
+                                  '/images/furniture/7/3.jpg',
+                                  '/images/furniture/7/4.jpg',
+                                ],
+                                'description' => ''
+                              ]
                   ];
 
                   return $data;
