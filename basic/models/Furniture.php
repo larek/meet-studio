@@ -114,7 +114,7 @@ class Furniture{
 			],
 			'5' => (object)[
 				'id' => '5',
-				'title' => 'Шкаф',
+				'title' => 'Обувной шкаф',
 				'image' => '/images/furniture/5/1-thumb.jpg',
 				'link' => '/furniture/5',
 				'images' => [
@@ -144,6 +144,14 @@ class Furniture{
                                                                   <tr>
                                                                           <td>Материал изделия</td>
                                                                           <td>Клен сикамора, латунь полированная, кото</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <td>Стоимость</td>
+                                                                    <td>312400 рублей</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <td>Срок изготовления</td>
+                                                                    <td>5 недель</td>
                                                                   </tr>
                                                           </tbody>
                                                   </table>
