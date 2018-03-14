@@ -186,6 +186,18 @@ class Furniture{
                                   '/images/furniture/8/3.jpg',
                                 ],
                                 'description' => ''
+                              ],
+                              '9' => (object)[
+                                'id' => '9',
+                                'title' => 'Зеркало streamline modern',
+                                'image' => '/images/furniture/9/1-thumb.jpg',
+                                'link' => '/furniture/9',
+                                'images' => [
+                                  '/images/furniture/9/1.jpg',
+                                  '/images/furniture/9/2.jpg',
+                                  '/images/furniture/9/3.jpg',
+                                  '/images/furniture/9/4.jpg',
+                                ]
                               ]
                   ];
 
