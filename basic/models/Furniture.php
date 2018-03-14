@@ -198,6 +198,39 @@ class Furniture{
                                   '/images/furniture/9/3.jpg',
                                   '/images/furniture/9/4.jpg',
                                 ]
+                              ],
+                              '10' => (object)[
+                                'id' => '10',
+                                'title' => 'Рама для ТВ "Treasure"',
+                                'image' => '/images/furniture/10/1-thumb.jpg',
+                                'link' => '/furniture/10',
+                                'images' => [
+                                  '/images/furniture/10/1.jpg',
+                                  '/images/furniture/10/2.jpg',
+                                  '/images/furniture/10/3.jpg',
+                                  '/images/furniture/10/4.jpg',
+                                ],
+				'description' => '
+                                  <table class="table">
+                                    <tbody>
+                                      <tr>
+                                        <td>Размеры</td>
+                                        <td>Изготавливается под ваш телевизор</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Описание изделия</td>
+                                        <td>Эта красивая рама изготовлена из натурального шпона эбена макассар. Темное, изысканное дерево с глянцевым покрытием, в котором отражается ваш интерьер. Ее грани так подчеркивают строгость и утонченность формы, что она станет дополнением вашего интерьера.</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Срок изготовления</td>
+                                        <td>3-4 недели</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Стоимость</td>
+                                        <td>8500 за м.п.</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>'
                               ]
                   ];
 
