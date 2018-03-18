@@ -170,6 +170,25 @@ span.btn-fotorama-fullscreen:hover {
     height: 200px;
 }
 
+.sideBlock {
+    background: #343a3f;
+    padding: 15px 0px;
+}
+
+.sideBlock ul{
+  padding: 0px 0px 0px 10px;
+}
+
+.sideBlock ul li {
+    list-style: none;
+    color: #de9b28;
+    margin: 5px 0px;
+}
+
+.sideBlock ul li a {
+    color: #9a9d9f;
+}
+
 @media (min-width: 1200px) {
     .container {
         max-width: 960px !important;
