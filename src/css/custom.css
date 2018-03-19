@@ -183,7 +183,9 @@ span.btn-fotorama-fullscreen:hover {
     color: #de9b28;
     margin: 5px 0px;
 }
-
+li.active > a {
+    color: #de9b28!important;
+}
 .sideBlock ul li a {
     color: #9a9d9f;
 }

@@ -14,6 +14,7 @@ use app\models\Projects;
 use app\models\Furniture;
 use app\models\Decor;
 use app\modules\admin\models\Product;
+use app\modules\admin\models\Category;
 use yii\data\ActiveDataProvider;
 
 class SiteController extends Controller
@@ -107,13 +108,18 @@ class SiteController extends Controller
     }
 
     public function actionFurniture(){
+        $query = Product::find();
+
+        if(isset($_GET['cat'])){
+          $childs = $this->getChilds($_GET['cat']);
+          $query->andWhere(['category_id' => $childs]);
+        }
         $dataProvider = new ActiveDataProvider([
-          'query' => Product::find(),
+          'query' => $query,
           'pagination' => [
             'pageSize' => 20
           ]
         ]);
-        //$model = new Furniture;
 
         return $this->render('furniture',[
             'title' => 'Мебель',
@@ -237,5 +243,20 @@ class SiteController extends Controller
             
             echo json_encode($ret);
          }
+    }
+
+    protected function getChilds($id){
+        static $childs_array = [];
+        array_push($childs_array, $id);
+        $models = Category::find()->where(['pid' => $id])->all();
+        foreach($models as $model){
+            if(isset($model->id)) {
+                    array_push($childs_array, $model->id);
+                   $this->getChilds($model->id);
+            }
+        }
+
+        return $childs_array;
+
     }
 }

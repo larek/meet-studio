@@ -19,9 +19,9 @@ use app\modules\admin\models\Category;
     <?
     
     if(!$model->isNewRecord){
-        $modelCategory = Category::find()->andWhere(['pid' => 0])->andWhere('id!='.$model->id)->all();
+        $modelCategory = Category::find()->andWhere('id!='.$model->id)->all();
     }else{
-        $modelCategory = Category::find()->andWhere(['pid' => 0])->all();
+        $modelCategory = Category::find()->all();
     }
     $dropDownListItems = ArrayHelper::map($modelCategory,'id','title');
     $dropDownListItems[0] = 'Категория верхнего уровня';

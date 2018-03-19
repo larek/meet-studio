@@ -17,6 +17,7 @@ $config = [
         'str2url' => [
             'class' => 'app\components\str2url',
         ],
+        'TreeView' => 'app\components\TreeView',
         'TreeViewAdmin' => 'app\components\TreeViewAdmin',
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
