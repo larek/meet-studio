@@ -144,7 +144,8 @@ class ProductController extends Controller
                   $img = $_SERVER['DOCUMENT_ROOT']."/uploads/".$file_new_name;
                   // $size = Image::getImagine()->open($img)->getSize()->widen(1000);
 
-                  Image::thumbnail($img, 300, 200, $mode)->save('uploads/300x200/'. $file_new_name, ['quality' => 100]);
+                  Image::thumbnail($img, 300, 200, $mode)->save('uploads/300x200/'. $file_new_name, ['quality' => 80]);
+                  Image::thumbnail($img, 1000, null, $mode)->save('uploads/1000px/'. $file_new_name, ['quality' => 90]);
                   // Image::thumbnail($img, 1500, 500, $mode)->save('uploads/1500x500/'. $file_new_name, ['quality' => 100]);
                  // echo "Success";
               }else{
