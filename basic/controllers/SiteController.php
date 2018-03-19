@@ -13,6 +13,8 @@ use yii\imagine\Image;
 use app\models\Projects;
 use app\models\Furniture;
 use app\models\Decor;
+use app\modules\admin\models\Product;
+use yii\data\ActiveDataProvider;
 
 class SiteController extends Controller
 {
@@ -105,11 +107,17 @@ class SiteController extends Controller
     }
 
     public function actionFurniture(){
-        $model = new Furniture;
+        $dataProvider = new ActiveDataProvider([
+          'query' => Product::find(),
+          'pagination' => [
+            'pageSize' => 20
+          ]
+        ]);
+        //$model = new Furniture;
 
-        return $this->render('gridView',[
+        return $this->render('furniture',[
             'title' => 'Мебель',
-            'model' => $model->getData(),
+            'dataProvider' => $dataProvider,
         ]);
     }
 
