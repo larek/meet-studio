@@ -7,7 +7,7 @@ class Decor{
 			'1' => (object)[
 				'id' => '1',
 				'title' => 'Каменный шпон',
-				'image' => "/images/meet-stone.jpg",
+				'image' => "/images/meet-stone-300x200.jpg",
 				'link' => '/decor/1',
 			],
 			'2' => (object)[
