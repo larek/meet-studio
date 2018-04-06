@@ -131,8 +131,10 @@ class SiteController extends Controller
         $model = new Furniture;
         $data = $model->getData();
         $product = $data[$id];
-        return $this->render('detailView',[
-            'product' => $product
+        $model = Product::findOne($id);
+        return $this->render('singleProduct',[
+            'product' => $product,
+            'model' => $model
         ]);
     }
 
