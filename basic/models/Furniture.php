@@ -156,7 +156,7 @@ class Furniture{
                                                           </tbody>
                                                   </table>
                                                   <br>
-                                                  <img src="/images/furniture/5/furniture-5-schema.png" class="img-fluid" />'
+                                                  <img src="/images/furniture/5/furniture-5-schema-2.png" class="img-fluid" />'
                           ],
 			'6' => (object)[
 				'id' => '6',
