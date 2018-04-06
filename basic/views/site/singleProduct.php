@@ -1,6 +1,6 @@
 <?
 use yii\helpers\Html;
-$this->title = $product->title;
+$this->title = $model->title;
 
 // Title row
 $html = Html::beginTag('div', ['class' => 'row mt-3']);
@@ -13,7 +13,7 @@ $html.= Html::endTag('div'); // end row
 // Fotorama slider & description row
 $html.= Html::beginTag('div', ['class' => 'row']);
 $html.= Html::beginTag('div', ['class' => 'col-md-6']);
-if(isset($product->images) && count($product->images) > 0){
+if(isset($model->images) && count($model->images) > 0){
 	$html.= Html::beginTag('div', [
 							'class' => 'fotorama', 
 							'data-width' => '100%', 

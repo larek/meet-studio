@@ -128,12 +128,8 @@ class SiteController extends Controller
     }
 
     public function actionFurnitureSingle($id){
-        $model = new Furniture;
-        $data = $model->getData();
-        $product = $data[$id];
         $model = Product::findOne($id);
         return $this->render('singleProduct',[
-            'product' => $product,
             'model' => $model
         ]);
     }
